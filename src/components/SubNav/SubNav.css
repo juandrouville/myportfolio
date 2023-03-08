@@ -1,0 +1,22 @@
+
+.conteinerSubNav{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 95%;
+    height: 8%;
+    margin-top: 1%;
+}
+
+.conteinerPortfolio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 4px #122824;
+    border-radius: 5px;
+    height: 100%;
+    width: 150px;
+    font-family: secondFont;
+    font-size: 22px;
+    color:#122824;
+}

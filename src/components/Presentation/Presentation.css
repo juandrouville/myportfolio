@@ -1,0 +1,23 @@
+
+.conteinerPresentation{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    height: 100%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.conteinerText{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding-top: 2%;
+}
+
+.profession{
+    font-size:70px;
+    margin:0;
+    margin-bottom: -15px;
+    cursor: pointer;
+}

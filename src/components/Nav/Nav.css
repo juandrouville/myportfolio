@@ -1,0 +1,33 @@
+
+.conteiner{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:center;
+    width: 95%;
+    height: 15%;
+    overflow: hidden;
+    border-bottom: solid 4px #122824;
+}
+
+.title{
+    font-size:60px;
+    padding-top: 10px;
+    margin: 0;
+}
+
+.button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    color:#fff1d9;
+    background-color: #122824;
+    border-radius: 5px;
+    font-family: secondFont;
+    font-size: 20px;
+    height: 70%;
+    width:150px;
+    cursor: pointer;
+}
