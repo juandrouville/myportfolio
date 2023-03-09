@@ -6,6 +6,11 @@
     height: 100%;
     margin-top: 1%;
     margin-bottom: 1%;
+} @media( max-width:500px){
+    .conteinerPresentation{
+        margin-top: 2%;
+        flex-direction:column-reverse;
+    }
 }
 
 .conteinerText{
@@ -13,6 +18,11 @@
     flex-direction: column;
     width: 60%;
     padding-top: 2%;
+    overflow: hidden;
+} @media(max-width:500px){
+    .conteinerText{
+        width: 100%;
+    }
 }
 
 .profession{
@@ -20,4 +30,9 @@
     margin:0;
     margin-bottom: -15px;
     cursor: pointer;
+} @media(max-width:500px){
+    .profession{
+        font-size: 50px;
+        margin-bottom: -10px;
+    }
 }
