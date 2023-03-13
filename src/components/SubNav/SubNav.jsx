@@ -6,7 +6,7 @@ function SubNav(){
     return(
         <div className="conteinerSubNav">
             <div className="conteinerPortfolio">
-                PORTFOLIO
+                <h1>PORTFOLIO</h1>
             </div>
             <Lenguajes/>
         </div>

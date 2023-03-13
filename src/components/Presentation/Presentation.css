@@ -2,49 +2,55 @@
 .conteinerPresentation{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     width: 95%;
     height: 100%;
     margin-top: 1%;
-    margin-bottom: 1%;
+    margin-bottom: 3%;
 } @media( max-width:800px){
     .conteinerPresentation{
-        margin-top: 2%;
         flex-direction:column-reverse;
+        align-items: center;
     }
 }
-
+    
 .conteinerText{
     display: flex;
     flex-direction: column;
     width: 60%;
-    padding-top: 2%;
     overflow: hidden;
-    background-color: yellow;
 } @media(max-width:800px){
     .conteinerText{
         width: 100%;
+        margin-top: 2%;
     }
 }
 
 .profession{
-    font-size:70px;
+    font-size:8vw;
     margin:0;
     margin-bottom: -15px;
     cursor: pointer;
+    color: #122824;
 } @media(max-width:800px){
     .profession{
-        font-size: 50px;
+        font-size:13vw;
         margin-bottom: -10px;
     }
 }
+
 .conteinerImg{
     display: flex;
     width: 40%;
     height:100%;
+    margin-left: 1%;
     overflow: hidden;
+    border: solid 4px #122824;
+    border-radius: 5px;
 } @media (max-width:800px){
     .conteinerImg{
         width: 100%;
+        margin-left: 0;
     }
 }
 
