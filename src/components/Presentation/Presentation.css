@@ -6,7 +6,7 @@
     height: 100%;
     margin-top: 1%;
     margin-bottom: 1%;
-} @media( max-width:500px){
+} @media( max-width:800px){
     .conteinerPresentation{
         margin-top: 2%;
         flex-direction:column-reverse;
@@ -19,7 +19,8 @@
     width: 60%;
     padding-top: 2%;
     overflow: hidden;
-} @media(max-width:500px){
+    background-color: yellow;
+} @media(max-width:800px){
     .conteinerText{
         width: 100%;
     }
@@ -30,9 +31,26 @@
     margin:0;
     margin-bottom: -15px;
     cursor: pointer;
-} @media(max-width:500px){
+} @media(max-width:800px){
     .profession{
         font-size: 50px;
         margin-bottom: -10px;
     }
+}
+.conteinerImg{
+    display: flex;
+    width: 40%;
+    height:100%;
+    overflow: hidden;
+} @media (max-width:800px){
+    .conteinerImg{
+        width: 100%;
+    }
+}
+
+.conteinerImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position:center;
 }

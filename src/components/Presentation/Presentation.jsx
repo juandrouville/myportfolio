@@ -1,5 +1,6 @@
 import React from "react";
 import "./Presentation.css";
+import img from '../../portfolio.jpg';
 
 function Presentation(){
     return(
@@ -13,7 +14,9 @@ function Presentation(){
                     commodi labore laboriosam doloribus odio asperiores a culpa.
                 </p>
             </div>
-            <div></div>
+            <div className="conteinerImg">
+                <img src={img} alt='My photo portfolio'/>
+            </div>
         </div>
     );
 };

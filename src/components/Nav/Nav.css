@@ -5,30 +5,24 @@
     justify-content:space-between;
     align-items:center;
     width: 95%;
-    height: 15%;
     overflow: hidden;
     border-bottom: solid 4px #122824;
-} @media(max-width:500px){
-    .conteiner{
-        height: 10%;
-    }
 }
 
 .title{
-    font-size:60px;
-    padding-top: 10px;
+    display: flex;
+    background-color: aqua;
+    font-size:7vw;
+    padding-top: 2%;
+    padding-bottom: 1%;
     margin: 0;
+    white-space: nowrap;
     color:#122824;
-}   @media ( max-width:500px ){
-        .title{
-            font-size:30px;
-            padding-top: 8px;
-            margin: 0;
-        }
-    }   
+}     
 
 .button{
     display: flex;
+    border-bottom: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -39,24 +33,17 @@
     font-family: secondFont;
     font-size: 20px;
     height: 70%;
-    width:150px;
+    background-color: yellow;
     cursor: pointer;
-} @media( max-width:500px){
+} @media( max-width:800px){
     .button{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-        color:#fff1d9;
-        background-color: #122824;
-        border-radius: 5px;
         font-family: secondFont;
-        font-size: 8px;
-        height: 30%;
-        width:60px;
+        font-size: 10px;
+        height: 60%;
+        width: 15%;
         cursor: pointer; 
     }
-}
+} 
+    
 
 
