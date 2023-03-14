@@ -52,11 +52,10 @@
         width: 100%;
         margin-left: 0;
     }
-}
+}   .conteinerImg img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position:center;
+    }
 
-.conteinerImg img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position:center;
-}
