@@ -8,6 +8,10 @@
     overflow: hidden;
     border-bottom: solid 4px #122824;
     margin-bottom: 1%;
+}   @media (max-width:800px){
+    .conteiner{
+        border-bottom: solid 2px #122824;
+    }
 }
 
 .title{

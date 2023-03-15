@@ -18,7 +18,11 @@
     border-radius: 5px;
     padding-left: 1%;
     padding-right: 1%;
-} 
+}   @media (max-width:800px){
+    .conteinerPortfolio{
+        border: solid 2px #122824;
+    }
+}
     
 
 .conteinerPortfolio h1{

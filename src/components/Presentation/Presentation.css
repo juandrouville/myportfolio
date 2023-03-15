@@ -51,6 +51,7 @@
     .conteinerImg{
         width: 100%;
         margin-left: 0;
+        border: solid 2px #122824;
     }
 }   .conteinerImg img{
         width: 100%;

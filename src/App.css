@@ -15,4 +15,8 @@
    border: solid 4px #122824;
    border-radius: 5px;
    margin:2%;
-} 
+}  @media(max-width:800px){
+   .conteinerApp{
+      border: solid 2px #122824;
+   }
+}
