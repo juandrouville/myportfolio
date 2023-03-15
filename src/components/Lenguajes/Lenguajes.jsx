@@ -11,10 +11,8 @@ function Lenguajes(){
     return(
         <div className="conteinerLenguajes">
             <h1 id='esp' onClick={changeLanguage}>ESP </h1>
-            <h1 style={{ marginRight:'10px',marginLeft:'10px'}}>|</h1>
+            <h1 style={{ marginRight:'15px',marginLeft:'15px'}}>|</h1>
             <h1 id='por' onClick={changeLanguage}>POR </h1>
-            <h1 style={{ marginRight:'10px',marginLeft:'10px'}}>|</h1>
-            <h1 id='ing' onClick={changeLanguage}>ING </h1>
         </div>
     );
 };
