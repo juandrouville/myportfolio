@@ -21,6 +21,8 @@
 }   @media (max-width:800px){
     .conteinerPortfolio{
         border: solid 2px #122824;
+        padding-left: 3%;
+        padding-right: 3%;
     }
 }
     

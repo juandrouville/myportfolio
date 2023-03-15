@@ -29,7 +29,7 @@
 .profession{
     font-size:8vw;
     margin:0;
-    margin-bottom: -15px;
+    margin-bottom: -35px;
     cursor: pointer;
     color: #122824;
 } @media(max-width:800px){
@@ -60,3 +60,9 @@
         object-position:center;
     }
 
+.textPresentation{
+    font-family: textFont;
+    color: #122824;
+    font-size: 18px;
+    padding-right: 2%;
+}
