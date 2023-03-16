@@ -13,8 +13,8 @@ function Presentation(){
     return(
         <div className="conteinerPresentation">
             <div className="conteinerText">
-                <h1 className="profession">DESIGNER</h1>
-                <h1 className="profession">DEVELOPER</h1>
+                <h1 className="professionTitle">DESIGNER</h1>
+                <h1 className="professionTitle">DEVELOPER</h1>
                 <p className="textPresentation">{ myText[language] }</p>
             </div>
             <div className="conteinerImg">

@@ -14,6 +14,12 @@
     border-bottom: solid 4px #fff1d9;
     width: 95%;
     text-align: center;
+}   @media (max-width:800px){
+        .conteinerContact h1{
+            border-bottom: solid 2px #fff1d9;
+            padding-bottom: 2%;
+            font-size: 8vw;
+        }
 }
 
 .conteinerIcons{
@@ -32,7 +38,7 @@
     width: 70%;
     height: 50%;
     margin-bottom: 2%;
-}
+} 
 
 @keyframes float {
 	0% { transform: translatey(0px); }
@@ -61,6 +67,19 @@
     font-family: textFont;
     font-size: 1vw;
     color:#fff1d9;
+} @media(max-width:800px){
+    .links{
+        width: 20vw;
+        height: 20vh;
+    }
+    .links img{
+        width: 14vw;
+    }
+    .divisionIcons{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
 }
 
 

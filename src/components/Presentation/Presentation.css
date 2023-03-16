@@ -26,17 +26,23 @@
     }
 }
 
-.profession{
+.professionTitle{
     font-size:8vw;
     margin:0;
-    margin-bottom: -35px;
+    margin-bottom: -30px;
     cursor: pointer;
     color: #122824;
+    transition: ease-in-out 0.5s;
 } @media(max-width:800px){
-    .profession{
+    .professionTitle{
         font-size:13vw;
         margin-bottom: -10px;
     }
+}
+
+.professionTitle:hover {
+    transform: translateY(-5px) scale(1.01) ;
+    text-shadow: -3px 3px 6px rgba(0, 0, 0,0.2);
 }
 
 .conteinerImg{

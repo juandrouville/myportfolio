@@ -18,6 +18,11 @@
     height: 75%;
     border-radius: 5px;
     background-color: #122824;
+}   @media(max-width:800px){
+    .conteinerModal{
+        width:80%;
+        height: 65vh;
+    }
 }
 
 .toClose{
@@ -32,6 +37,10 @@
     font-size: 2vw;
     color:white;
     padding-right: 2%;
+} @media(max-width:800px){
+    .toClose{
+        height: 25px;
+    }
 }
     
 
@@ -52,4 +61,8 @@
     margin:2%;
     border: solid 4px #fff1d9;
     border-radius: 5px;
+}   @media(max-width:800px){
+    .borderModal{
+        border: solid 2px #fff1d9;
+    }
 }
