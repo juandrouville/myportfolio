@@ -1,5 +1,4 @@
 import './app.css';
-import Modal from './components/Modal/Modal';
 import Nav from './components/Nav/Nav';
 import Presentation from './components/Presentation/Presentation';
 import SubNav from './components/SubNav/SubNav';
@@ -13,7 +12,6 @@ function App() {
           <Nav/>
           <SubNav/>
           <Presentation/>
-          <Modal/>
         </div>
       </div>
     </LanguageProvider>

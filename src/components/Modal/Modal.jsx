@@ -4,16 +4,21 @@ import './Modal.css';
 
 const Portal = document.getElementById("portal");
 
-const Modal = ({children}) => {
-    return ReactDOM.createPortal(
-        <div className="conteinerOverley">
-            <div className="conteinerModal">
-                <div className="toClose"> X </div>
-                <div> {children} </div>
-            </div>
-        </div>,
-        Portal,
-    );
+const Modal = (props) => {
+    const { open, onClickClose, children } = props;
+    if(!open){ return null };
+        return ReactDOM.createPortal(
+            <div className="conteinerOverley">
+                <div className="conteinerModal">
+                    <div className="toClose" onClick={()=>onClickClose()}> X </div>
+                    <div>
+                        {children}
+                    </div>
+                </div>
+            </div>,
+            Portal,
+        );
+    
 };
-
+    
 export default Modal;
