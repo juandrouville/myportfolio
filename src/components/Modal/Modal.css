@@ -12,10 +12,25 @@
 
 .conteinerModal{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     width: 60%;
     height: 75%;
     border-radius: 5px;
-    background-color: white;
+    background-color: #122824;;
+}
+
+.toClose{
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 5%;
+    cursor: pointer;
+} .toClose h1{
+    font-family: secondFont;
+    font-size: 2vw;
+    color:white;
+    padding-top: 2%;
+    padding-right: 1%;
 }

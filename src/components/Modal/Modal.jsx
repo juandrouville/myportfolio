@@ -10,7 +10,7 @@ const Modal = (props) => {
         return ReactDOM.createPortal(
             <div className="conteinerOverley">
                 <div className="conteinerModal">
-                    <div className="toClose" onClick={()=>onClickClose()}> X </div>
+                    <div className="toClose" onClick={()=>onClickClose()}><h1>X</h1></div>
                     <div>
                         {children}
                     </div>
