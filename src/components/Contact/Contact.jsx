@@ -12,43 +12,47 @@ import email from '../../icons/EMAIL.png';
 function Contact(){
     return (
         <div className="conteinerContact">
-            <h1>Contacto</h1>
-            <div className="conteinerLinks">
-                <div className="links">
-                    <a href="https://api.whatsapp.com/send?phone=5491132751781&text=Hola%20Juan%20Drouville!" target={"_blank"}>
-                        <img src = {whatsapp}/>
-                    </a>
-                    <h1>Whatsapp</h1>
+            <h1>CONTACTO</h1>
+            <div className="conteinerIcons">
+                <div className="divisionIcons">
+                    <div className="links">
+                        <a href="https://www.linkedin.com/in/juan-drouville/" target={"_blank"}>
+                            <img src = {linkedin}/>
+                        </a>
+                        <h2>Linkedin</h2>
+                    </div>
+                    <div className="links">
+                        <a href="https://github.com/juandrouville" target={"_blank"}>
+                            <img src = {github}/>
+                        </a>
+                        <h2>GitHub</h2>
+                    </div>
+                    <div className="links">
+                        <a href="https://gitlab.com/achudev" target={"_blank"}>
+                            <img src = {gitlab}/>
+                        </a>
+                        <h2>GitLab</h2>
+                    </div>
                 </div>
-                <div className="links">
-                    <a href="https://www.linkedin.com/in/juan-drouville/" target={"_blank"}>
-                        <img src = {linkedin}/>
-                    </a>
-                    <h1>Linkedin</h1>
-                </div>
-                <div className="links">
-                    <a href="https://github.com/juandrouville" target={"_blank"}>
-                        <img src = {github}/>
-                    </a>
-                    <h1>GitHub</h1>
-                </div>
-                <div className="links">
-                    <a href="https://jadrouville@gmail.com" target={"_blank"}>
-                        <img src={email}/>
-                    </a>
-                    <h1>Email</h1>
-                </div>
-                <div className="links">
-                    <a href="https://www.instagram.com/achu.fotos/" target={"_blank"}>
-                        <img src = {instagram}/>
-                    </a>
-                    <h1>Instagram</h1>
-                </div>
-                <div className="links">
-                    <a href="https://gitlab.com/achudev" target={"_blank"}>
-                        <img src = {gitlab}/>
-                    </a>
-                    <h1>GitLab</h1>
+                <div className="divisionIcons">
+                    <div className="links">
+                        <a href="https://jadrouville@gmail.com" target={"_blank"}>
+                            <img src={email}/>
+                        </a>
+                        <h2>Email</h2>
+                    </div>
+                    <div className="links">
+                        <a href="https://api.whatsapp.com/send?phone=5491132751781&text=Hola%20Juan%20Drouville!" target={"_blank"}>
+                            <img src = {whatsapp}/>
+                        </a>
+                        <h2>Whatsapp</h2>
+                    </div>
+                    <div className="links">
+                        <a href="https://www.instagram.com/achu.fotos/" target={"_blank"}>
+                            <img src = {instagram}/>
+                        </a>
+                        <h2>Instagram</h2>
+                    </div>
                 </div>
             </div>
         </div>
