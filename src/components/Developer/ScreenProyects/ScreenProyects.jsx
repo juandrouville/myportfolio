@@ -9,7 +9,7 @@ function ScreenProyects(){
         <div className="conteinerProyects">
             <Nav/>
             <SubNav/>
-            <div style={{display:"flex",flexDirection:"row"}}>
+            <div style={{display:"flex",flexDirection:"row",flexWrap:"wrap"}}>
                 <CardProyect/>
                 <CardProyect/>
             </div>
