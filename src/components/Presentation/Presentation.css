@@ -51,13 +51,11 @@
     height:100%;
     margin-left: 1%;
     overflow: hidden;
-    border: solid 4px #122824;
     border-radius: 5px;
 } @media (max-width:800px){
     .conteinerImg{
         width: 100%;
         margin-left: 0;
-        border: solid 2px #122824;
     }
 }   .conteinerImg img{
         width: 100%;

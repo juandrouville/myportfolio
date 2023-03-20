@@ -1,0 +1,117 @@
+.conteinerCard{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+    border-radius: 5px;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.conteinerCard:hover{
+    width: 600px;
+    transition-delay: 0s;
+}
+
+.conteinerCard .circle{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    flex-direction: column;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.conteinerCard .circle::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    clip-path: circle(120px at center);
+    transition: 0.5s;
+}
+
+.conteinerCard:hover .circle::before{
+    clip-path: circle(400px at center);
+}
+
+.conteinerCard .circle .logo{
+    position: relative;
+    width: 200px;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.conteinerCard:hover .circle .logo{
+    transform: scale(0);
+    transition-delay: 0s;
+}
+
+.content{
+    position: relative;
+    width: 50%;
+    left: 20%;
+    padding:20px 20px 20px 40px;
+    opacity: 0;
+    transition:0.5s;
+    visibility: hidden;
+}
+
+.conteinerCard:hover .content{
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.5s;
+}
+
+.conteinerCard .image{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    height: 500px;
+    background-color: aqua;
+    transition:0.5s;
+    transition-delay: 0s;
+}
+
+.conteinerCard:hover .image{
+    left: 72%;
+    transform: translate(-50%,-50%) scale(1); 
+    transition-delay: 0.5s;
+}
+
+
+@media (max-width:800px){
+    .conteinerCard{
+        width: auto;
+        max-width: 350px;
+        align-items: flex-start;
+    }
+    .conteinerCard:hover{
+        height: 600px;
+    }
+    .conteinerCard:hover .image{
+        top:initial;
+        bottom: 30px;
+        left:50%;
+        transform: translate(-50%,0%) scale(1);
+        height: 300px;
+    }   
+    .conteinerCard .content{
+        width:100%;
+        left: 0;
+        padding:40px
+    }
+}

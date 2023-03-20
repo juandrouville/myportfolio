@@ -2,6 +2,7 @@ import React,{ useContext } from "react";
 import "./Presentation.css";
 import img from '../../portfolio.jpg';
 import { Language } from '../../context/languageContext';
+import { Link } from 'react-router-dom';
 
 
 function Presentation(){
@@ -14,7 +15,9 @@ function Presentation(){
         <div className="conteinerPresentation">
             <div className="conteinerText">
                 <h1 className="professionTitle">DESIGNER</h1>
-                <h1 className="professionTitle">DEVELOPER</h1>
+                <Link to = "/developer" style={{ textDecoration: 'none' }}>
+                    <h1 className="professionTitle">DEVELOPER</h1>
+                </Link>
                 <p className="textPresentation">{ myText[language] }</p>
             </div>
             <div className="conteinerImg">
@@ -25,4 +28,3 @@ function Presentation(){
 };
 
 export default Presentation;
-  
