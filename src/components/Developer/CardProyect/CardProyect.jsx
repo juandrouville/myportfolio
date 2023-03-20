@@ -2,6 +2,7 @@ import React from "react";
 import './CardProyect.css';
 import dogLogo from '../App-dog.png';
 import png from '../png.png';
+import { Link } from "react-router-dom";
 
 function CardProyect(){
     return(
@@ -12,7 +13,8 @@ function CardProyect(){
             </div>
             <div className="content">
                 <h2>Proyect Web</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum quis placeat voluptatibus. Voluptate mollitia vel voluptates, ullam odio recusandae impedit laudantium architecto facilis quae quidem ex corporis minima adipisci beatae.</p>
+                <p style={{fontFamily:'textFont'}}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum quis placeat voluptatibus. Voluptate mollitia vel voluptates.</p>
+                <Link to={'https://mydog-app.web.app/'}  target="_blank" className='buttonLink'>GO SITE!</Link>
             </div>
             <div className="image"><img src={png}/></div>
         </div>

@@ -9,8 +9,7 @@ function ScreenProyects(){
         <div className="conteinerProyects">
             <Nav/>
             <SubNav/>
-            <div style={{display:"flex",flexDirection:"row",flexWrap:"wrap"}}>
-                <CardProyect/>
+            <div className="proyectsList">
                 <CardProyect/>
             </div>
         </div>
