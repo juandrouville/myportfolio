@@ -85,23 +85,27 @@
 }
 
 .conteinerCard .image{
-    position: absolute;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%,-50%) scale(0);
-    height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:40%;
+    transform: translate(50%,0%) scale(0);
     transition:0.5s;
-    transition-delay: 0s;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
 }
 
 .conteinerCard:hover .image{
-    left: 72%;
-    transform: translate(-50%,-50%) scale(1); 
+    transform: translate(0%,0%) scale(1); 
+    transition: 0.5s;
     transition-delay: 0.5s;
+    opacity: 1;
+    visibility: visible;
 }
 .conteinerCard .image img{
-    width: 100%;
-    height: 100%;
+    width: 50;
+    height: 50%;
     object-fit: cover;
     object-position: center;
 }
@@ -130,47 +134,52 @@
 
 @media (max-width:800px){
     .conteinerCard{
+        display: flex;
+        flex-direction: column;
         width: 100%;
-        height: 40vh;
     }
     .conteinerCard:hover{
         width: 100%;
-        height: 60vh;
         margin-top: 5vh;
         display: flex;
         flex-direction: column-reverse;
         background-color: #122824;
+        padding: 0;
+        align-items: center;
+        overflow: visible;
     }
     .conteinerCard .circle .logo{
         width:45vw;
     }
     .conteinerCard:hover .image{
-        left:50%;
-        transform: translate(-50%,-100%) scale(1);
-    }   
-    .conteinerCard .content{
-        width:100%;
-        height: 50%;
-        left: 0;
-        padding:10px;
+        display: flex;
+        width: 100%;
+        transform: scale(1);
+        overflow: visible;
     }
+    .conteinerCard .image img{
+        transform: scale(0) translate(0%,0%);
+        transition: 0.5s;
+    }
+    .conteinerCard:hover .image img{
+        transform: translate(0%,50%);
+        transition: 0.5s;
+    } 
+
     .conteinerCard:hover .content{
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 90%;
         justify-content: baseline;
         color: #e77c34;
         font-size: 14px;
-        margin-left: 4%;
-        margin-right: 4%;
-        margin-bottom: 4%;
-        width: 90%;
     }
     .conteinerCard:hover .content h2{
         align-self: flex-start;
         margin-bottom: 0;
-    }
+    } 
     .buttonLink{
-        margin-top: 10px;
+        margin-top: 15px;
     }
 }

@@ -1,5 +1,6 @@
-import React from "react";
+import React ,{ useContext } from "react";
 import './Contact.css';
+import { Language } from "../../context/languageContext";
 import linkedin from '../../icons/LINKEDIN.png';
 import whatsapp from '../../icons/WHATSAPP.png';
 import github from '../../icons/GITHUB.png';
@@ -10,9 +11,15 @@ import email from '../../icons/EMAIL.png';
 
 
 function Contact(){
+    const { language }= useContext(Language);
+    const title = {
+        esp:'CONTACTO',
+        por:'CONTATO',
+    };
+
     return (
         <div className="conteinerContact">
-            <h1>CONTACTO</h1>
+            <h1>{title[language]}</h1>
             <div className="conteinerIcons">
                 <div className="divisionIcons">
                     <div className="links">
