@@ -3,22 +3,20 @@ import './ScreenProyects.css';
 import Nav from '../../Nav/Nav';
 import SubNav from '../../SubNav/SubNav';
 import CardProyect from "../CardProyect/CardProyect";
-import iconDog from '../iconDogApp.png';
-import computer from "../computer.png";
-import mockUp from "../computerMock.png";
+import icon from '../macbook.png';
 
 function ScreenProyects(){
     const objProyect1 = {
         description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum quis placeat voluptatibus. Voluptate mollitia vel voluptates." ,
-        icon: iconDog , 
+        title: 'MY DOG APP', 
         goSite:'https://mydog-app.web.app/',
-        mockUp:mockUp,
+        icon: icon,
     };
     const objProyect2 = {
         description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum quis placeat voluptatibus. Voluptate mollitia vel voluptates.",
-        icon: iconDog,
+        icon: icon,
         goSite:"https://pf-vinos-ecommerce.vercel.app/",
-        mockUp: mockUp,
+        title: 'WINE APP',
     }
     return (
         <div className="conteinerProyects">
@@ -27,7 +25,7 @@ function ScreenProyects(){
             <div className="proyectsList">
                 <CardProyect {...objProyect1}/>
                 <CardProyect {...objProyect2}/>
-                <CardProyect  icon={computer}/>
+                <CardProyect  icon={icon}/>
             </div>
         </div>
     );

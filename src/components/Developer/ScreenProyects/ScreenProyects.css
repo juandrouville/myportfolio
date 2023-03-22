@@ -9,16 +9,19 @@
 .proyectsList{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     width: 100%;
+    max-width: 90vw;
     height: 100%;
+    overflow: hidden;
 }
 
 @media(max-width:800px){
     .proyectsList{
+        flex-direction: column;
         margin-top: 5vh;
+        overflow: visible;
     }
     .conteinerProyects{
         width: 98vw;

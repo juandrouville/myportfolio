@@ -1,34 +1,61 @@
 
 .conteinerSubNav{
     display:flex;
+    flex-direction: row;
     justify-content:space-between;
-    align-items: center;
+    align-items:flex-end;
     width: 95%;
-    height: 8%;
-    margin-top: 1%;
-    margin-bottom: 1%;
+    margin-bottom: 5vh;
 }
-
 .conteinerPortfolio{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
     border: solid 4px #122824;
     border-radius: 5px;
-    padding-left: 1%;
-    padding-right: 1%;
 }   @media (max-width:800px){
-    .conteinerPortfolio{
-        border: solid 2px #122824;
-        padding-left: 3%;
-        padding-right: 3%;
+        .conteinerPortfolio{
+            border: solid 2px #122824;
+            padding-left: 3%;
+            padding-right: 3%;
+        }
     }
-}
-    
-
 .conteinerPortfolio h1{
     font-family: secondFont;
     font-size: 2vw;
     color:#122824;
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
+.conteinerLinks{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+}
+.conteinerLinks .linksNav {
+    display:flex;
+    text-decoration: none;
+    border-bottom: solid 4px #122824;
+    color:#122824;
+    width: 100%;
+    font-size: 3vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    padding-bottom: 1vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    transition: 0.5s;
+} 
+.conteinerLinks .linksNav:hover{
+    transform: translateY(-10%);
+    transition: 0.5s;
+} 
+@media(max-width:800px){
+    .conteinerLinks .linksNav{
+        border-bottom: solid 2px #122824;
+        padding-bottom: 0.5vh;
+    }
+}
+
+
+
+    
+

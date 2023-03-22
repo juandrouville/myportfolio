@@ -18,7 +18,6 @@
     background-color: #122824;
     overflow: hidden;
 }
-
 .conteinerCard .circle{
     display:flex;
     justify-content: center;
@@ -41,19 +40,34 @@
     transition: 0.5s;
 }
 
-
 .conteinerCard .circle .logo{
     position: relative;
-    width: 10vw;
+    width: 20vw;
     transition: 0.5s;
     transition-delay: 0.5s;
+    opacity: 1;
+    visibility: visible;
 }
 
 .conteinerCard:hover .circle .logo{
     transform: scale(0);
     transition-delay: 0s;
+    transition: 0.5s;
+    opacity: 1;
+    visibility: hidden;
 }
-
+    
+.conteinerCard .circle h2{
+    align-self: center;
+    text-align: center;
+    white-space: nowrap;
+    width: 100%;
+    border-bottom:solid 4px #122824;
+    margin-top: 2%;
+    padding-bottom: 2%;
+    font-size: 2vw;
+    color:#122824;
+}
 .conteinerCard:hover .circle h2{
     transform: scale(0);
     transition-delay: 0s;
@@ -67,7 +81,7 @@
     opacity: 0;
     transition:0.5s;
     visibility: hidden;
-    color:#e77c34;
+    color:#fff1d9;
 }
 
 .conteinerCard:hover .content{
@@ -84,11 +98,11 @@
     width:40%;
     transform: translate(50%,0%) scale(0);
     transition:0.5s;
+    transition-delay: 0.5s;
     overflow: hidden;
     opacity: 0;
     visibility: hidden;
 }
-
 .conteinerCard:hover .image{
     transform: translate(0%,0%) scale(1); 
     transition: 0.5s;
@@ -97,15 +111,29 @@
     visibility: visible;
     margin:20px;
 }
+.conteinerCard .image img{
+    width: 18vw;
+    transform: scale(0);
+    transition: 0.8s;
+    opacity:0;
+    visibility: 0;
+}
 .conteinerCard:hover .image img{
-    width: 100%;
+    width: 18vw;
     object-fit: cover;
     object-position: center;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+    transform:scale(1);
+    opacity: 1;
+    visibility: visible;
 }
+
+
 
 .buttonLink{
     display: flex;
-    border:solid 2px #e77c34;
+    border:solid 2px #fff1d9;
     border-radius: 5px;
     width: 50%;
     align-items: center;
@@ -115,15 +143,16 @@
     font-size: x-large;
     padding-top: 3%;
     padding-bottom: 2%;
-    color:#e77c34;
+    color:#fff1d9;
     margin-top:5vh;
     transition: 0.5s;
     hyphens:none;
 }
-
 .buttonLink:hover{
     transform: translate(0%,-10%);
 }
+
+
 
 
 @media (max-width:800px){
@@ -131,6 +160,7 @@
         display: flex;
         flex-direction: column;
         width: 100%;
+        height: 45vh;
     } 
     .conteinerCard:hover{
         width: 90%;
@@ -142,25 +172,29 @@
         overflow: visible;
     }
     .conteinerCard .circle .logo{
-        width:45vw;
+        width:85vw;
+    }
+    .conteinerCard .image{
+        transform: translate(50%,-50%) scale(0);
+        transition:0.5s;
     }
     .conteinerCard:hover .image{
         display: flex;
         width: 90%;
-        transform: scale(1);
         overflow: visible;
     }
     .conteinerCard:hover .image img{
-        width: 65%;
-        transition: 0.5s;
+        width: 90%;
     } 
-
+    .content{
+        width:90%;
+    }
     .conteinerCard:hover .content{
         display: flex;
         flex-direction: column;
         align-items: center;
         position: relative;
-        color: #e77c34;
+        color: #fff1d9;
         width: 90%;
         font-size: 14px;
         padding: 0;
@@ -170,6 +204,9 @@
         margin-bottom: -10px;
         margin-top: 0;
     } 
+    .conteinerCard .circle h2{
+        font-size: 6vw;
+    }
     .buttonLink{
         margin-top: 5px;
         margin-bottom: 25px;
