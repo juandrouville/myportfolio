@@ -24,6 +24,11 @@
     color:#122824;
     padding-left: 2vw;
     padding-right: 2vw;
+    transition: 0.5s;
+}
+.conteinerPortfolio h1:hover{
+    transform: translateY(-10%);
+    transition: 0.5s;
 }
 .conteinerLinks{
     display: flex;

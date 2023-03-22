@@ -20,7 +20,7 @@
 }
 .conteinerCard .circle{
     display:flex;
-    justify-content: center;
+    justify-content:flex-end;
     align-items: center;
     position: absolute;
     flex-direction: column;

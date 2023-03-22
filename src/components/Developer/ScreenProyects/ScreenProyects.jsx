@@ -3,18 +3,19 @@ import './ScreenProyects.css';
 import Nav from '../../Nav/Nav';
 import SubNav from '../../SubNav/SubNav';
 import CardProyect from "../CardProyect/CardProyect";
-import icon from '../macbook.png';
+import computer from '../macbook.png';
+import phone from '../phone.png';
 
 function ScreenProyects(){
     const objProyect1 = {
         description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum quis placeat voluptatibus. Voluptate mollitia vel voluptates." ,
         title: 'MY DOG APP', 
         goSite:'https://mydog-app.web.app/',
-        icon: icon,
+        icon: computer,
     };
     const objProyect2 = {
         description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum quis placeat voluptatibus. Voluptate mollitia vel voluptates.",
-        icon: icon,
+        icon: computer,
         goSite:"https://pf-vinos-ecommerce.vercel.app/",
         title: 'WINE APP',
     }
@@ -25,7 +26,7 @@ function ScreenProyects(){
             <div className="proyectsList">
                 <CardProyect {...objProyect1}/>
                 <CardProyect {...objProyect2}/>
-                <CardProyect  icon={icon}/>
+                <CardProyect  icon={phone} title={"SATURNO"}/>
             </div>
         </div>
     );
