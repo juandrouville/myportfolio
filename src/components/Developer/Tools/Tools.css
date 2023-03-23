@@ -1,0 +1,36 @@
+.conteinerTools{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: aqua;
+}
+
+.iconText{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items:center;
+    cursor: pointer;
+    width: 25%;
+    height: 100%;
+}
+.iconText img{
+    height: 35px;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 0;
+}
+.iconText h3{
+    font-family: textFont;
+    font-size: 12px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    margin: 0;
+    padding: 0;
+}
+.iconText:hover h3{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+}

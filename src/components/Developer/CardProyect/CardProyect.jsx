@@ -2,6 +2,7 @@ import React,{ useContext } from "react";
 import './CardProyect.css';
 import { Language } from "../../../context/languageContext";
 import { Link } from "react-router-dom";
+import Tools from "../Tools/Tools";
 
 function CardProyect(props){
     const{ description ,icon , goSite , title} = props || 'em breve';
@@ -15,7 +16,7 @@ function CardProyect(props){
             </div>
             <div className="content">
                 <h2>{title}</h2>
-                <p style={{fontFamily:'textFont'}}>{description}</p>
+                <Tools/>
                 <Link to={goSite}  target="_blank" className='buttonLink'>GO SITE!</Link>
             </div>
             <div className="image"><img src={icon}/></div>
