@@ -70,3 +70,25 @@
     font-size: 18px;
     padding-right: 2%;
 }
+
+.dowloadButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50vh;
+    font-family: secondFont;
+    background-color:#122824;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    padding: 10px;
+    color: #fff1d9;
+    cursor:pointer;
+    border-radius: 5px;
+    font-size: 1vw;
+    transition: 0.5s;
+}
+.dowloadButton:hover{
+    transform: translateY(-10%);
+    transition: 0.5s;
+}
