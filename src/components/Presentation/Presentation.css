@@ -22,8 +22,7 @@
 } @media(max-width:800px){
     .conteinerText{
         width: 100%;
-        margin-top: 2%;
-        background-color: aqua;
+        margin-top: 4%;
     }
 }
 
@@ -56,7 +55,7 @@
 } @media (max-width:800px){
     .conteinerImg{
         width: 100%;
-        height: 35vh;
+        height: 38vh;
         margin-left: 0;
     }
 }   .conteinerImg img{
@@ -89,6 +88,13 @@
     border-radius: 5px;
     font-size: 1.3vw;
     transition: 0.5s;
+}
+@media(max-width:800px){
+    .dowloadButton{
+        width: 100%;
+        height: 5vh;
+        font-size: 10px;
+    }
 }
 .dowloadButton:hover{
     transform: translateY(-10%);
