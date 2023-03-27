@@ -5,6 +5,7 @@ import { Language } from '../../context/languageContext';
 import { Link } from 'react-router-dom';
 import Modal from "../Modal/Modal";
 import DownloadCv from "../DownloadCv/DownloadCv";
+import ButtonDownload from "../DownloadCv/ButtonDownload/ButtonDownload";
 
 function Presentation(){
     const { language }= useContext(Language);

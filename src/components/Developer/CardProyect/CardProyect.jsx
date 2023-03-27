@@ -16,6 +16,7 @@ function CardProyect(props){
             </div>
             <div className="content">
                 <h2>{title}</h2>
+                <h3>Ferramentas</h3>
                 <Tools/>
                 <Link to={goSite}  target="_blank" className='buttonLink'>GO SITE!</Link>
             </div>

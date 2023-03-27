@@ -2,7 +2,6 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    background-color: aqua;
 }
 
 .iconText{
@@ -11,14 +10,15 @@
     justify-content:flex-end;
     align-items:center;
     cursor: pointer;
-    width: 25%;
+    width: 20%;
     height: 100%;
+    margin-bottom: 3%;
 }
 .iconText img{
     height: 35px;
     object-fit: cover;
     object-position: center;
-    margin-bottom: 0;
+    margin-bottom: 1vh;
 }
 .iconText h3{
     font-family: textFont;
