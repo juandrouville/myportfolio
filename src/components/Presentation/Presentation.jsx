@@ -4,6 +4,7 @@ import img from '../../portfolio.jpg';
 import { Language } from '../../context/languageContext';
 import { Link } from 'react-router-dom';
 import Modal from "../Modal/Modal";
+import DownloadCv from "../DownloadCv/DownloadCv";
 
 function Presentation(){
     const { language }= useContext(Language);
@@ -26,7 +27,7 @@ function Presentation(){
                 <p className="textPresentation">{ myText[language] }</p>
                 <button className="dowloadButton" onClick={()=>setOpenModal(true)}>{download[language]}</button>
                 <Modal open = {openModal} onClickClose={()=>setOpenModal(false)}>
-
+                    <DownloadCv/>
                 </Modal>
             </div>
             <div className="conteinerImg">

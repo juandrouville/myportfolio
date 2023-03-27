@@ -6,6 +6,10 @@
     align-items:flex-end;
     width: 95%;
     margin-bottom: 5vh;
+}   @media(max-width:800px){
+    .conteinerSubNav{
+        margin-bottom: 4%;
+    }
 }
 .conteinerPortfolio{
     display: flex;

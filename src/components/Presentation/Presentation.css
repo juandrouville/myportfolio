@@ -23,6 +23,7 @@
     .conteinerText{
         width: 100%;
         margin-top: 2%;
+        background-color: aqua;
     }
 }
 
@@ -55,6 +56,7 @@
 } @media (max-width:800px){
     .conteinerImg{
         width: 100%;
+        height: 35vh;
         margin-left: 0;
     }
 }   .conteinerImg img{
@@ -85,7 +87,7 @@
     color: #fff1d9;
     cursor:pointer;
     border-radius: 5px;
-    font-size: 1vw;
+    font-size: 1.3vw;
     transition: 0.5s;
 }
 .dowloadButton:hover{

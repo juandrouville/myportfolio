@@ -1,0 +1,78 @@
+.conteinerDownload{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+    
+.arrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10vw;
+    animation: float 4s ease-in-out infinite;
+}
+.arrow img{
+    object-fit: cover;
+    object-position: center;
+}
+.rectangle{
+    background-color:#fff1d9;
+    width: 12vw;
+    height: 5vh;
+    margin-top: 2vh ;
+    margin-bottom: 2vh;
+}
+.conteinerOptions{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: solid 4px #fff1d9;
+    margin-top: 2%;
+}
+.conteinerOptions h1{
+    font-family: secondFont;
+    font-size: 1.3vw;
+    color:#fff1d9;
+}
+.conteinerOptions h2{
+    font-family: textFont;
+    font-size: 1vw;
+    color: #fff1d9;
+}
+.conteinerOptions a{
+    text-decoration: none;
+    outline: none;
+    border:none;
+    color:#fff1d9;
+    font-family: textFont;
+}
+.conteinerOptions .downloadLink{
+    font-family: secondFont;
+}
+
+@media (max-width:800px){
+    .conteinerDownload{
+        padding-top: 20%;
+    }
+    .arrow{
+        width:25vw;
+    }
+    .rectangle{
+        width: 30vw;
+        height: 3vh;
+    }
+    .conteinerOptions{
+        border-bottom: solid 2px #fff1d9;
+        width:90%;
+        margin-top: 6%;
+    }
+    .conteinerOptions h1{
+        font-size: 8px;
+    }
+    .conteinerOptions h2{
+        font-size: 7px;
+    }
+}
