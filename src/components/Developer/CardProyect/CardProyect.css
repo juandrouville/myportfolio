@@ -179,51 +179,72 @@
     .conteinerCard{
         display: flex;
         flex-direction: column;
+        align-items: center;
         width: 100%;
         height: 45vh;
+        margin-top: 4%;
     } 
     .conteinerCard:hover{
         width: 90%;
+        height: 40vh;
         margin-top: 10vh;
         display: flex;
         flex-direction: column-reverse;
         background-color: #122824;
-        align-items: center;
+        
         overflow: visible;
     }
     .conteinerCard .circle .logo{
         width:85vw;
     }
     .conteinerCard .image{
-        transform: translate(50%,-50%) scale(0);
+        transform: translate(50%,0%) scale(0);
         transition:0.5s;
     }
     .conteinerCard:hover .image{
         display: flex;
         width: 90%;
         overflow: visible;
+        transform: translate(0%,-25%) scale(1);
+        transition: 0.5s;
     }
     .conteinerCard:hover .image img{
         width: 90%;
     } 
     .content{
-        width:90%;
-    }
-    .conteinerCard:hover .content{
         display: flex;
         flex-direction: column;
         align-items: center;
-        position: relative;
+        width:90%;
+        transform: translateY(80%);
+        transition: 0.5s;
         color: #fff1d9;
         width: 90%;
         font-size: 14px;
         padding: 0;
+        margin: 0;
     }
-    .conteinerCard:hover .content h2{
-        align-self: flex-start;
-        margin-bottom: -10px;
-        margin-top: 0;
-    } 
+    .conteinerCard:hover .content{
+        width: 90%;
+        transform: translateY(-20%);
+        transition: 0.5s;
+    }
+    .contentTitle{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .contentTitle h2{
+        text-align: center;
+        border-bottom: solid 2px #fff1d9;
+        width: 100%;
+        font-size: 6vw;
+        margin: 0;
+    }   
+        
+    
     .conteinerCard .circle h2{
         font-size: 6vw;
     }
