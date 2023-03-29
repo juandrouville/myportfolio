@@ -24,9 +24,9 @@ function ScreenProyects(){
             <Nav/>
             <SubNav/>
             <div className="proyectsList">
+                <CardProyect  icon={phone} title={"SATURNO APP"}/>
                 <CardProyect {...objProyect1}/>
                 <CardProyect {...objProyect2}/>
-                <CardProyect  icon={phone} title={"SATURNO"}/>
             </div>
         </div>
     );

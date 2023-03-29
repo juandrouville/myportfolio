@@ -8,6 +8,7 @@
     overflow: hidden;
     border-bottom: solid 4px #122824;
     margin-bottom: 3vh;
+    transition: 0.5s;
 }   @media (max-width:800px){
     .conteiner{
         border-bottom: solid 2px #122824;

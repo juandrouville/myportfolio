@@ -78,8 +78,10 @@
 }
 
 .content{
-    position: relative;
-    padding: 3%;
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction: column;
+    margin: 3%;
     width: 50%;
     height: 90%;
     opacity: 0;
@@ -88,9 +90,7 @@
     color:#fff1d9;
     transition: 0.5s;
     transform: scale(0);
-    background-color: aqua;
 }
-
 .conteinerCard:hover .content{
     opacity: 1;
     visibility: visible;
@@ -98,7 +98,19 @@
     transition-delay:0.5s;
     transform: scale(1);
 }
-
+.contentTitle h2{
+    border-bottom: solid 3px #fff1d9;
+    width: 100%;
+    font-size: 2.2vw;
+    margin: 0;
+}
+.contentTitle h3{
+    font-size: 1vw;
+    font-family: textFont;
+    letter-spacing:0.2em;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
 .conteinerCard .image{
     display: flex;
     align-items: center;
