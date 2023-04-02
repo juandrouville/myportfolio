@@ -7,26 +7,42 @@ import computer from '../macbook.png';
 import phone from '../phone.png';
 
 function ScreenProyects(){
-    const objProyect1 = {
-        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum quis placeat voluptatibus. Voluptate mollitia vel voluptates." ,
+    const objDog = {
+        description:{
+            esp:"Aplicación Web, proyecto personal para curso fullstack de Soy Henry, utilice:",
+            por:"Aplicativo Web, projeto pessoal para curso fullstack de Soy Henry, utilizei:",
+        },
         title: 'MY DOG APP', 
         goSite:'https://mydog-app.web.app/',
         icon: computer,
     };
-    const objProyect2 = {
-        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum quis placeat voluptatibus. Voluptate mollitia vel voluptates.",
+    const objWine = {
+        description: {
+         esp:"Aplicación Web, proyecto grupal para el curso fullstack de Soy Henry, utilice:",
+         por:"Aplicativo Web, projeto de grupo para curso fullstack de Soy Henry, utilizei",
+        },
         icon: computer,
         goSite:"https://pf-vinos-ecommerce.vercel.app/",
         title: 'WINE APP',
+    };
+    const objSaturno = {
+        description : {
+            esp:"Aplicación mobile para sistema de salud argentino, donde actue como front-end, utilice:",
+            por:"Aplicativo mobile para o sitema de saúde argentino, onde atuei como front-end, utilizei:",
+        },
+        icon:phone,
+        goSite:false,
+        title:"SATURNO APP",
     }
+            
     return (
         <div className="conteinerProyects">
             <Nav/>
             <SubNav/>
             <div className="proyectsList">
-                <CardProyect  icon={phone} title={"SATURNO APP"}/>
-                <CardProyect {...objProyect1}/>
-                <CardProyect {...objProyect2}/>
+                <CardProyect  {...objSaturno}/>
+                <CardProyect {...objDog}/>
+                <CardProyect {...objWine}/>
             </div>
         </div>
     );

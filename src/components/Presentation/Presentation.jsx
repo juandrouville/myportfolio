@@ -1,6 +1,6 @@
 import React,{ useContext } from "react";
 import "./Presentation.css";
-import img from '../../portfolio.jpg';
+import img from '../../portfolio.png';
 import { Language } from '../../context/languageContext';
 import { Link } from 'react-router-dom';
 import Modal from "../Modal/Modal";

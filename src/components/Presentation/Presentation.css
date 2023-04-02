@@ -52,7 +52,7 @@
     margin-left: 1%;
     overflow: hidden;
     border-radius: 5px;
-} @media (max-width:800px){
+}  @media (max-width:800px){
     .conteinerImg{
         width: 100%;
         height: 38vh;
