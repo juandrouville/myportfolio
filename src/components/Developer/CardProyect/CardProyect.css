@@ -153,7 +153,9 @@
 
 .buttonLink{
     display: flex;
-    position: relative;
+    position:absolute;
+    left: 0;
+    bottom: 0;
     border:solid 2px #fff1d9;
     border-radius: 5px;
     width: 50%;
@@ -161,7 +163,7 @@
     justify-content: center;
     text-decoration: none;
     outline: none;
-    font-size: x-large;
+    font-size: 2vw;
     padding-top: 3%;
     padding-bottom: 2%;
     color:#fff1d9;
@@ -178,34 +180,36 @@
 @media (max-width:800px){
     .conteinerCard{
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
         width: 100%;
-        height: 45vh;
-        margin-top: 4%;
     } 
     .conteinerCard:hover{
         width: 90%;
-        height: 40vh;
+        height: 50vh;
         margin-top: 10vh;
         display: flex;
-        flex-direction: column-reverse;
+        justify-content: baseline;
         background-color: #122824;
-        
         overflow: visible;
     }
     .conteinerCard .circle .logo{
         width:85vw;
     }
+    .conteinerCard .circle h2{
+        font-size: 6vw;
+    }
     .conteinerCard .image{
-        transform: translate(50%,0%) scale(0);
+        transform: translateY(-20%) scale(0);
         transition:0.5s;
     }
     .conteinerCard:hover .image{
         display: flex;
+        position: absolute;
+        top:-15px;
         width: 90%;
         overflow: visible;
-        transform: translate(0%,-25%) scale(1);
+        transform: translateY(-65%) scale(1);
         transition: 0.5s;
     }
     .conteinerCard:hover .image img{
@@ -215,18 +219,19 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: flex-start;
         width:90%;
         transform: translateY(80%);
         transition: 0.5s;
         color: #fff1d9;
-        width: 90%;
         font-size: 14px;
         padding: 0;
         margin: 0;
     }
     .conteinerCard:hover .content{
         width: 90%;
-        transform: translateY(-20%);
+        height: 75%;
+        transform: translateY(10%);
         transition: 0.5s;
     }
     .contentText{
@@ -247,13 +252,17 @@
         width: 100%;
         font-size: 3vw;
         text-align: center;
+        margin-bottom: 0;
     }  
-    
-    .conteinerCard .circle h2{
-        font-size: 6vw;
-    }
     .buttonLink{
-        margin-top: 5px;
-        margin-bottom: 25px;
+        position: relative;
+        margin-top: 3%;
+        font-size: 4vw;
+        left:unset;
+        bottom: 0; 
     }
 }
+    
+    
+    
+

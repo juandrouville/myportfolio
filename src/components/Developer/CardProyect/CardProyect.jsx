@@ -20,11 +20,10 @@ function CardProyect(props){
                     <p>{description&&description[language]}</p>
                 </div>
                 <Tools tools = {tools} />
-                { goSite ? (
-                    <Link to={goSite}  target="_blank" className='buttonLink'>GO SITE!</Link>
-                    ):null
-                }
-
+                    { goSite ? (
+                        <Link to={goSite}  target="_blank" className='buttonLink'>GO SITE!</Link>
+                        ):null
+                    }
             </div>
             <div className="image"><img src={icon}/></div>
         </div>

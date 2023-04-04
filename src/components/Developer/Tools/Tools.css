@@ -1,10 +1,9 @@
 .conteinerTools{
     display: flex;
+    align-items: flex-start;
     flex-wrap: wrap;
     width: 100%;
-    margin-top: 4%;
-    margin-bottom: 4%;
-    margin-left: 2%;
+    margin-top: 1vh;
 }
 
 .iconText{
@@ -16,14 +15,17 @@
     width: 20%;
 }
 .iconText img{
-    height: 35px;
+    height: 33px;
     object-fit: cover;
     object-position: center;
     margin-bottom: 1vh;
+    margin-top: 1vh;
 }
 .iconText h3{
     font-family: textFont;
     font-size: 12px;
+    text-align: center;
+    white-space: nowrap;
     visibility: hidden;
     opacity: 0;
     transition: 0.5s;
