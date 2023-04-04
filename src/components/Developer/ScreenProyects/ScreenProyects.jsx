@@ -15,6 +15,7 @@ function ScreenProyects(){
         title: 'MY DOG APP', 
         goSite:'https://mydog-app.web.app/',
         icon: computer,
+        tools:["Html","JavaScript","NodeJS","Css","ReactJS","Redux","Postgress","Sequelize"],
     };
     const objWine = {
         description: {
@@ -24,6 +25,7 @@ function ScreenProyects(){
         icon: computer,
         goSite:"https://pf-vinos-ecommerce.vercel.app/",
         title: 'WINE APP',
+        tools:["Html","JavaScript","NodeJS","Css","ReactJS","Redux","Postgress","Sequelize"],
     };
     const objSaturno = {
         description : {
@@ -33,6 +35,7 @@ function ScreenProyects(){
         icon:phone,
         goSite:false,
         title:"SATURNO APP",
+        tools:["JavaScript","NodeJS","React Native","Expo","Css"],
     }
             
     return (

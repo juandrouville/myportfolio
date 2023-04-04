@@ -1,43 +1,35 @@
 import React from "react";
 import './Tools.css';
+import { objTools } from "./infoTools";
 
-import iconCss from '../css.svg';
-import iconExpress from '../express.svg';
-import iconHtml from '../html.svg';
-import iconJavascript from '../javascript.svg';
-import iconPostgres from '../postgress.svg';
-import iconReact from '../react.svg';
-import iconRedux from '../redux.svg';
+function Tools(props){
+    
+    const propsTools = props.tools;
+    const proyectTools = objTools.filter((tool)=>{
+        if( propsTools.includes(tool.tool)){
+            return tool;
+        };
+    });
 
-function Tools(){
+    const mapTools = () => {
+        return (
+            proyectTools.map((tool) => {
+                return (
+                    <div className="iconText">
+                        <img src={tool.icon}></img>
+                        <h3>{tool.tool}</h3>
+                    </div>
+                );
+            })
+        )
+    };
+
     return (
         <div className="conteinerTools">
-            <div className="iconText">
-                <img src={iconHtml}/>
-                <h3>Html</h3>
-            </div>
-            <div className="iconText">
-                <img src={iconCss}/>
-                <h3>Css</h3>
-            </div>
-            <div className="iconText">
-                <img src={iconJavascript}/>
-                <h3>JavaScript</h3>
-            </div>
-            <div className="iconText">
-                <img src={iconReact}/>
-                <h3>React</h3>
-            </div>
-            <div className="iconText">
-                <img src={iconRedux}/>
-                <h3>Redux</h3>
-            </div>
-            <div className="iconText">
-                <img src={iconPostgres}/>
-                <h3>Postgres</h3>
-            </div>
+            { mapTools() }
         </div>
     );
 };
 
 export default Tools;
+    

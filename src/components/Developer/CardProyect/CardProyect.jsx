@@ -5,13 +5,9 @@ import { Link } from "react-router-dom";
 import Tools from "../Tools/Tools";
 
 function CardProyect(props){
-    const{ description, icon, goSite, title} = props;
+    const{ description, icon, goSite, title, tools} = props;
     const { language }= useContext(Language);
-    const subTitle = {
-        esp:'Herramientas',
-        por:'Ferramentas',
-    };
-    console.log(description&[language]);
+
     return(
         <div className="conteinerCard">
             <div className="circle">
@@ -19,12 +15,11 @@ function CardProyect(props){
                 <h2>{title}</h2>
             </div>
             <div className="content">
-                <div className="contentTitle">
+                <div className="contentText">
                     <h2>{title}</h2>
                     <p>{description&&description[language]}</p>
-                    <h3>{subTitle[language]}</h3>
                 </div>
-                <Tools/>
+                <Tools tools = {tools} />
                 { goSite ? (
                     <Link to={goSite}  target="_blank" className='buttonLink'>GO SITE!</Link>
                     ):null

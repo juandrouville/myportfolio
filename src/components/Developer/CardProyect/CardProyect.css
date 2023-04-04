@@ -98,14 +98,14 @@
     transition-delay:0.5s;
     transform: scale(1);
 }
-.contentTitle h2{
+.contentText h2{
     border-bottom: solid 3px #fff1d9;
     width: 100%;
     font-size: 2.2vw;
     margin: 0;
 }
-.contentTitle h3{
-    font-size: 1vw;
+.contentText p{
+    font-size: 0.9vw;
     font-family: textFont;
     letter-spacing:0.2em;
     margin-top: 2%;
@@ -229,21 +229,25 @@
         transform: translateY(-20%);
         transition: 0.5s;
     }
-    .contentTitle{
+    .contentText{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 100%;
     }
-    .contentTitle h2{
+    .contentText h2{
         text-align: center;
         border-bottom: solid 2px #fff1d9;
         width: 100%;
         font-size: 6vw;
         margin: 0;
     }   
-        
+    .contentText p{
+        width: 100%;
+        font-size: 3vw;
+        text-align: center;
+    }  
     
     .conteinerCard .circle h2{
         font-size: 6vw;
