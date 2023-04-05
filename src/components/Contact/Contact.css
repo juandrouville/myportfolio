@@ -74,10 +74,10 @@
         width: 14vw;
     }
     .divisionIcons{
-        justify-content: center;
+        justify-content:center;
         align-items: center;
         width: 100%;
-        height: 30%;
+        height: 40%;
     }
     .conteinerContact h1{
         border-bottom: solid 2px #fff1d9;
