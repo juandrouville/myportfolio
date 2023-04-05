@@ -79,9 +79,10 @@
 
 .content{
     display: flex;
-    justify-content:space-evenly;
+    justify-content:flex-start;
     flex-direction: column;
     margin: 3%;
+    margin-top: 4%;
     width: 50%;
     height: 90%;
     opacity: 0;
@@ -148,9 +149,6 @@
     opacity: 1;
     visibility: visible;
 }
-
-
-
 .buttonLink{
     display: flex;
     position:absolute;
@@ -163,9 +161,10 @@
     justify-content: center;
     text-decoration: none;
     outline: none;
-    font-size: 2vw;
+    font-size: 1.5vw;
     padding-top: 3%;
     padding-bottom: 2%;
+    margin-bottom: 1%;
     color:#fff1d9;
     transition: 0.5s;
     hyphens:none;
@@ -173,6 +172,9 @@
 .buttonLink:hover{
     transform: translate(0%,-10%);
 }
+
+
+
 
 
 
