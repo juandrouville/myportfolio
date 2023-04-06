@@ -27,8 +27,6 @@
 .conteinerOptions{
     display: flex;
     width: 80%;
-    align-items: center;
-    justify-content: space-around;
     border-bottom: solid 4px #fff1d9;
     margin-top: 2%;
 }
@@ -50,6 +48,10 @@
     font-family: textFont;
 }
 .conteinerOptions .downloadLink{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
     font-family: secondFont;
 }
 
