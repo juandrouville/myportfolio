@@ -13,6 +13,9 @@ function Presentation(){
 
     return(
         <div className="conteinerPresentation">
+            <div className="conteinerImg">
+                <img src={img} alt='My photo portfolio'/>
+            </div>
             <div className="conteinerText">
                 <Link to = "/designer" style={{ textDecoration: 'none' }}> 
                     <h1 className="professionTitle">DESIGNER</h1>
@@ -25,9 +28,6 @@ function Presentation(){
                 <Modal open = {openModal} onClickClose={()=>setOpenModal(false)}>
                     <DownloadCv/>
                 </Modal>
-            </div>
-            <div className="conteinerImg">
-                <img src={img} alt='My photo portfolio'/>
             </div>
         </div>
     );
