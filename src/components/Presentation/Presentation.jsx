@@ -1,6 +1,7 @@
 import React,{ useContext } from "react";
 import "./Presentation.css";
 import img from '../../portfolio.png';
+import and from "./and.svg";
 import { Language } from '../../context/languageContext';
 import { Link } from 'react-router-dom';
 import Modal from "../Modal/Modal";
@@ -17,9 +18,10 @@ function Presentation(){
                 <img src={img} alt='My photo portfolio'/>
             </div>
             <div className="conteinerText">
-                <Link to = "/designer" style={{ textDecoration: 'none' }}> 
+                <Link to = "/designer" style={{ textDecoration: 'none',display:'flex'}}> 
                     <h1 className="professionTitle">DESIGNER</h1>
-                </Link>    
+                    <div className="and"><img src = {and}/></div>
+                </Link>  
                 <Link to = "/developer" style={{ textDecoration: 'none' }}>
                     <h1 className="professionTitle">DEVELOPER</h1>
                 </Link>
