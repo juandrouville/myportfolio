@@ -14,10 +14,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #161913;
     width: 60%;
     height: 75%;
     border-radius: 5px;
-    background-color: #122824;
 }   @media(max-width:800px){
     .conteinerModal{
         width:80%;

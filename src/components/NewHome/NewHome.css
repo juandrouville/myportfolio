@@ -1,40 +1,4 @@
 
-.conteinerNewHome {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: 100vh;
-    background-color: #161913;
-}
-
-.headerNewHome{
-    display: flex;
-    justify-content:space-between;
-    align-self: center;
-    align-items:end;
-    width: 90vw;
-    height: 8vh;
-    margin-bottom: 4vh;
-}
-
-.square{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.5rem;
-    font-family:'secondFont';
-    color: #e1dfba;
-    font-size: 0.7rem;
-    border:solid 2px #e1dfba;
-}
-
-.gradient{
-    width: 50%;
-    height: 30vh;
-    align-self: flex-end;
-    background-image:linear-gradient(90deg, #e1dfba 10%, #d1331e 80% );
-}
-
 .conteinerLenguage {
     display:flex;
     position: absolute;
@@ -53,28 +17,30 @@
 .conteinerNames{
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content:flex-end;
     width:50%;
-    height: 15vh;
-    padding: 0;
-    margin: 0;
+    background-color: yellow;
 }
 .name{
     display:flex;
+    width: 40%;
     justify-content:flex-end;
     font-family: 'secondfont';
     text-align:end;
-    width:40%;
     color: #e1dfba;
+    font-size: 3.5em;
+    background-color: tomato;
 }
 
 .lastname{
     display: flex;
+    width: 60%;
     align-self: flex-end;
     justify-content:flex-end;
-    width: 60%;
     font-family: "firstFont";
     color:#e1dfba;
+    font-size: 5em;
+    background-color: turquoise;
 }
 
 .line{

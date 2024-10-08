@@ -1,27 +1,13 @@
  .App{
    display:flex;
    flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   /**background-color: #fff1d9;
+   background-color: #161913;
    width: 100%;
    min-width: 100vw;
-   height: 100%;
-   font-family: firstFont;**/
+   height: 100vh;
 }
 
 .conteinerApp{
    display:flex;
    flex-direction: column;
-   align-items: center;
-   /**border: solid 4px #122824;
-   border-radius: 5px;
-   margin:2%;
-   width:95%;
-   height: 95%;
-   min-height: 98vh;**/
-}  @media(max-width:800px){
-   .conteinerApp{
-      border: solid 2px #122824;
-   }
-}
+}  

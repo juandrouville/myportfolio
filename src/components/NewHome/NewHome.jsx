@@ -9,14 +9,16 @@ function NewHome() {
                     P0RTF0LI0
                 </div>
                 <div className="square">
-                    C0NTACT0
+                    C0NTACT
                 </div>
             </div>
             <div className="gradient"></div>
-            <div className="conteinerNames">
-                <div className="name">JUAN</div>
-                <div className="lastname">DROUVILLE</div>
-            </div>
+                <div style={{width:"90vw",alignSelf:"center"}}>
+                    <div className="conteinerNames">
+                        <div className="name">JUAN</div>
+                        <div className="lastname">DROUVILLE</div>
+                    </div>
+                </div>
             <div className="line"></div>
             <div className="conteinerSkills">
                 <section style={{textAlign:"start"}}>
@@ -31,7 +33,7 @@ function NewHome() {
                 </section>
             </div>
             <div className="conteinerLenguage">
-                <h3 className="lenguageEsp">{"{ ESPAÑ0L }"}</h3>
+                <h3 className="lenguageEsp">{"{ SPANISH }"}</h3>
                 <h3 className="lenguagePor">{"{ P0RTUGUES }"}</h3>
             </div>
         </div>
