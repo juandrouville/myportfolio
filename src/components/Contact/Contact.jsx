@@ -6,7 +6,7 @@ import whatsapp from '../../icons/WHATSAPP.png';
 import github from '../../icons/GITHUB.png';
 import gitlab from '../../icons/GITLAB.png';
 import instagram from '../../icons/INSTAGRAM.png';
-import email from '../../icons/EMAIL.png';
+import email from '../../icons/EMAIL.svg';
 
 
 

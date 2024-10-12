@@ -18,10 +18,11 @@
     margin: 0;
     padding: 0;
     color: #e1dfba;
-    border-bottom: solid 4px #e1dfba;;
+    filter: drop-shadow(0 0 1.5px #e1dfba );
     width: 95%;
     text-align: center;
 }   
+    
 .conteinerIcons{
     display:flex;
     flex-direction: column;
@@ -46,12 +47,14 @@
     width: 15vw;
     height: 100%;
     margin-right: 1%;
+    transition: all 0.5s ease-in-out;
 } 
 .links img{
     width:4vw;
     object-fit: cover;
     object-position: center;
     margin-left: 1%;
+    filter: drop-shadow(0 0 1px #e1dfba );
     transition: all 0.5s ease-in-out;
     animation: float 6s ease-in-out infinite;
 } 
@@ -62,6 +65,7 @@
 .links h2{
     font-family: "secondFont";
     font-size: 1em;
+    text-shadow: 0 0 2px #e1dfba;
     color:#e1dfba;
 } 
 
@@ -75,6 +79,7 @@
     }
     .links img{
         width: 7.5vw;
+        
     }
     .divisionIcons{
         justify-content:center;
@@ -83,7 +88,6 @@
         height: 40%;
     }
     .conteinerContact h1{
-        border-bottom: solid 2px #e1dfba;
         padding-bottom: 2%;
         font-size: 2.5em;
     }

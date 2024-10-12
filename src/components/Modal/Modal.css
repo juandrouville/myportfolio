@@ -36,6 +36,7 @@
     font-family: secondFont;
     font-size: 2vw;
     color:white;
+    text-shadow: 0 0 3px #e1dfba;
     padding-right: 2%;
 } @media(max-width:800px){
     .toClose{
@@ -59,10 +60,11 @@
     width: 95%;
     height: 95%;
     margin:2%;
-    border: solid 4px #fff1d9;
+    border: solid 4px #e1dfba;
+    box-shadow: 0 0 2px #e1dfba;
     border-radius: 5px;
 }   @media(max-width:800px){
     .borderModal{
-        border: solid 2px #fff1d9;
+        border: solid 2px #e1dfba;
     }
 }
