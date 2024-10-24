@@ -1,0 +1,60 @@
+
+.containerInformation{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    width:50%;
+    height: 20vh;
+    color:#e1dfba;
+}
+
+.containerInformation h1{
+    margin: 0;
+    padding: 0;
+}
+
+.name{
+    display:flex;
+    width: 40%;
+    justify-content:flex-end;
+    font-family: 'secondfont';
+    text-align:end;
+    color: #e1dfba;
+    font-size: 3.5em;
+    transform: translate(-3vw,7vh);
+} 
+.lastname{
+    display: flex;
+    width: 60%;
+    align-self: flex-end;
+    justify-content:flex-end;
+    align-items:center;
+    font-family: "firstFont";
+    color:#e1dfba;
+    font-size: 7.5em;
+    transform: translateY(2vh);
+}
+.lineBottomNomes{
+    width: 95vh;
+    height: 2px;
+    background-color: #e1dfba;
+}
+
+@media (max-width:800px){
+    .containerInformation{
+        width: 55%;
+        height: 11vh;
+        justify-content: center;
+    }
+    .name{
+        transform: translateY(2vh);
+        width: 50%;
+        font-size: 5.5vw;
+    }
+    .lastname{
+        width: 50%;
+        font-size:15vw;
+        transform: translateX(10vw);
+    }
+}
+

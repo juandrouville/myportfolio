@@ -6,7 +6,7 @@ import whatsapp from '../../icons/WHATSAPP.png';
 import github from '../../icons/GITHUB.png';
 import gitlab from '../../icons/GITLAB.png';
 import instagram from '../../icons/INSTAGRAM.png';
-import email from '../../icons/EMAIL.svg';
+import email from '../../icons/EMAIL.png';
 
 
 
@@ -20,6 +20,7 @@ function Contact(){
     return (
         <div className="conteinerContact">
             <h1>{title[language]}</h1>
+            <div className="lineBottom"></div>
             <div className="conteinerIcons">
                 <div className="divisionIcons">
                     <div className="links">

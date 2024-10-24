@@ -14,35 +14,6 @@
     flex-wrap:wrap;
 }
 
-.conteinerNames{
-    display: flex;
-    flex-direction: column;
-    justify-content:flex-end;
-    width:50%;
-    background-color: yellow;
-}
-.name{
-    display:flex;
-    width: 40%;
-    justify-content:flex-end;
-    font-family: 'secondfont';
-    text-align:end;
-    color: #e1dfba;
-    font-size: 3.5em;
-    background-color: tomato;
-}
-
-.lastname{
-    display: flex;
-    width: 60%;
-    align-self: flex-end;
-    justify-content:flex-end;
-    font-family: "firstFont";
-    color:#e1dfba;
-    font-size: 5em;
-    background-color: turquoise;
-}
-
 .line{
     width: 90vw;
     align-self: center;
