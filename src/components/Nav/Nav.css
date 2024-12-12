@@ -1,4 +1,21 @@
+@keyframes change-shadow{
+    50%{
+        box-shadow: 0 0 4px #e1dfba;
+        text-shadow: 0 0 4px #e1dfba; 
+    }
+    100%{
+        box-shadow: 0 0 2px #e1dfba; 
+        text-shadow: 0 0 2px #e1dfba;
+    }
+}
 
+@media (max-width:850px) {
+    .conteiner {
+        margin-bottom: 6vh;
+        margin-top: 1vh;
+    }
+}
+ 
 .conteiner{
     display: flex;
     justify-content:space-between;
@@ -6,19 +23,12 @@
     align-items:flex-end;
     width: 90vw;
     max-width:1000vw;
-    height: 8vh;
+    height: 7vh;
+    padding:1vh;
     margin-bottom: 4vh;
-    transition-delay: 0.5s;
-    transition: all 0.9s ease-in-out;
     overflow: hidden;
 }
-   @media (max-width:850px){
-    .conteiner{
-        margin-bottom: 6vh;
-        margin-top: 1vh;   
-    }
-}
-    
+      
 .squarePortfolio{
     display: flex;
     justify-content: center;
@@ -32,13 +42,9 @@
     border:solid 2px #e1dfba;
     box-shadow: 0 0 2px #e1dfba;
     text-shadow: 0 0 2px #e1dfba;
+    transition-delay: 0.2s;
     transition: all 0.5s ease-in-out;
-    transform: translateX(-250px);
-}
-.squarePortfolio:hover{
-    color:#d1331e ;
-    text-shadow:  0 0 2px #d1331e;
-    transition: all 0.5s ease-in-out;
+    animation:change-shadow infinite ease-in-out 3s;
 }
 
 .squareContac{
@@ -55,13 +61,10 @@
     text-shadow: 0 0 2px #e1dfba;
     cursor: pointer;
     transition: all 0.5s ease-in-out;
+    transition-delay: 0.2s;
+    animation:change-shadow infinite ease-in-out 3s;
 }
 
-.squareContac:hover{
-    color:#d1331e;
-    text-shadow: 0 0 2px #d1331e;
-    transition: all 0.5s ease-in-out;
-}
 
     
 

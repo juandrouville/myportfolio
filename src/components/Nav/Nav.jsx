@@ -5,7 +5,6 @@ import Modal from '../Modal/Modal';
 import Contact from '../Contact/Contact';
 import { Link } from "react-router-dom";
 import anime from "animejs/lib/anime.es.js";
-import { easing } from "animejs";
 
 function Nav() {
     const [openModal, setOpenModal] = React.useState(false);
@@ -18,16 +17,15 @@ function Nav() {
     useEffect(()=> {
         anime({
             targets:".squarePortfolio",
-            translateX:[-250,0],
-            easing: 'easeOutInQuad',
-            duration:500,
+            translateX:[-100,0],
+            easing: 'easeInOutQuad',
+            duration:900,
         })
         anime({
             targets:".squareContac",
-            translateX:[0,250],
-            direction: 'reverse',
-            easing: 'easeOutInQuad',
-            duration:500,
+            translateX:[100,0],
+            easing: 'easeInOutQuad',
+            duration:900,
         })
     },[]);
     
