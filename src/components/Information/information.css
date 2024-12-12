@@ -1,18 +1,20 @@
 
-.containerInformation{
+.containerNames{
     display: flex;
     flex-direction: column;
     justify-content:flex-end;
+    margin-top: 10vh;
     width:50%;
     height: 20vh;
     color:#e1dfba;
 }
 
-.containerInformation h1{
+.containerNames h1{
     margin: 0;
     padding: 0;
+    filter: drop-shadow( 0 0 1.2px #e1dfba );
+    cursor:default;
 }
-
 .name{
     display:flex;
     width: 40%;
@@ -20,8 +22,8 @@
     font-family: 'secondfont';
     text-align:end;
     color: #e1dfba;
-    font-size: 3.5em;
-    transform: translate(-3vw,7vh);
+    font-size: 3em;
+    transform: translate(-1vw,7.5vh);
 } 
 .lastname{
     display: flex;
@@ -31,30 +33,35 @@
     align-items:center;
     font-family: "firstFont";
     color:#e1dfba;
-    font-size: 7.5em;
-    transform: translateY(2vh);
-}
-.lineBottomNomes{
-    width: 95vh;
-    height: 2px;
-    background-color: #e1dfba;
+    font-size: 7.6em;
+    transform: translate(2.5vw,2vh);
+    letter-spacing: 0.03em;
 }
 
-@media (max-width:800px){
-    .containerInformation{
+.lineNames{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    width: 90vw;
+    border: solid 2px #e1dfba;
+    filter: drop-shadow(0 0 1.2px  #e1dfba );
+}
+
+@media (max-width:850px){
+    .containerNames{
         width: 55%;
         height: 11vh;
         justify-content: center;
     }
     .name{
-        transform: translateY(2vh);
         width: 50%;
-        font-size: 5.5vw;
+        font-size:1em;
+        transform: translate(5vw,2vh);
     }
     .lastname{
         width: 50%;
-        font-size:15vw;
-        transform: translateX(10vw);
+        font-size:4em;
+        letter-spacing: 0.06em;
     }
 }
 

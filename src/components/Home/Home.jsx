@@ -5,6 +5,7 @@ import Gradient from "../Gradient/Gradient";
 import SubNav from "../SubNav/SubNav";
 import Presentation from "../Presentation/Presentation";
 import Information from "../Information/information";
+import Lenguajes from "../Lenguajes/Lenguajes";
 
 function Home(){
     return (
@@ -12,8 +13,7 @@ function Home(){
             <Nav/>
             <Gradient/>
             <Information/>
-            {/* <SubNav/>
-            <Presentation/> */}
+            <Lenguajes/>
         </div>
     );
 };

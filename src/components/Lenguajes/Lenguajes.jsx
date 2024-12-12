@@ -13,18 +13,17 @@ function Lenguajes(){
         <div className="conteinerLenguajes">
             { language === 'esp' ? 
                 ( 
-                    <h1 id='esp' onClick={changeLanguage} style={{color:"#ff5613"}} >ESP </h1>
+                    <h1 id='esp' onClick={changeLanguage} style={{color:"#d1331e",filter: 'drop-shadow(0 0 1px #d1331e)'}}>{'{ ESPAÑ0L }'}</h1>
                 ):(
-                <h1 id='esp' onClick={changeLanguage}>ESP </h1>
+                <h1 id='esp' onClick={changeLanguage}>{'{ ESPANH0L }'}</h1>
                 )
             }
-            <h1 style={{ marginRight:'15px',marginLeft:'15px'}}>|</h1>
             {
                 language === 'por' ? 
                 (
-                    <h1 id='por' onClick={changeLanguage} style={{color:"#ff5613"}} >POR </h1>
+                    <h1 id='por' onClick={changeLanguage} style={{color:"#d1331e",filter: 'drop-shadow(0 0 1px #d1331e)'}}>{'{ P0RTUGUÊS }'}</h1>
                 ) : (
-                    <h1 id='por' onClick={changeLanguage}> POR </h1> 
+                    <h1 id='por' onClick={changeLanguage}>{'{ P0RTUGUES }'} </h1> 
                 )
             }
             

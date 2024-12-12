@@ -1,9 +1,11 @@
-import React, { useContext } from "react";
+import React, { useContext,useEffect } from "react";
 import { Language } from "../../context/languageContext";
 import './Nav.css';
 import Modal from '../Modal/Modal';
 import Contact from '../Contact/Contact';
 import { Link } from "react-router-dom";
+import anime from "animejs/lib/anime.es.js";
+import { easing } from "animejs";
 
 function Nav() {
     const [openModal, setOpenModal] = React.useState(false);
@@ -13,6 +15,22 @@ function Nav() {
         por: 'C0NTAT0',
     };
 
+    useEffect(()=> {
+        anime({
+            targets:".squarePortfolio",
+            translateX:[-250,0],
+            easing: 'easeOutInQuad',
+            duration:500,
+        })
+        anime({
+            targets:".squareContac",
+            translateX:[0,250],
+            direction: 'reverse',
+            easing: 'easeOutInQuad',
+            duration:500,
+        })
+    },[]);
+    
     return (
         <div className="conteiner">
             <Link to={'/'} style={{ textDecoration: 'none' }}>

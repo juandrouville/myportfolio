@@ -5,22 +5,26 @@
     align-self: center;
     align-items:flex-end;
     width: 90vw;
+    max-width:1000vw;
     height: 8vh;
     margin-bottom: 4vh;
     transition-delay: 0.5s;
     transition: all 0.9s ease-in-out;
+    overflow: hidden;
 }
-   /* @media (max-width:800px){
+   @media (max-width:850px){
     .conteiner{
-       
         margin-bottom: 6vh;
+        margin-top: 1vh;   
     }
-} */
+}
+    
 .squarePortfolio{
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    background-color: #161410;
     padding: 0.5rem;
     font-family:'secondFont';
     color: #e1dfba;
@@ -28,8 +32,8 @@
     border:solid 2px #e1dfba;
     box-shadow: 0 0 2px #e1dfba;
     text-shadow: 0 0 2px #e1dfba;
-    background-color: #161913;
     transition: all 0.5s ease-in-out;
+    transform: translateX(-250px);
 }
 .squarePortfolio:hover{
     color:#d1331e ;
@@ -42,7 +46,7 @@
     justify-content: center;
     align-items: center;
     padding: 0.5rem;
-    background-color: #161913;
+    background-color: #161410;
     font-family: 'secondFont';
     color: #e1dfba;
     font-size: 0.7rem;
