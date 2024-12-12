@@ -4,7 +4,7 @@ import './Nav.css';
 import Modal from '../Modal/Modal';
 import Contact from '../Contact/Contact';
 import { Link } from "react-router-dom";
-import anime from "animejs/lib/anime.es.js";
+import { gsap } from "gsap";
 
 function Nav() {
     const [openModal, setOpenModal] = React.useState(false);
@@ -15,18 +15,7 @@ function Nav() {
     };
 
     useEffect(()=> {
-        anime({
-            targets:".squarePortfolio",
-            translateX:[-100,0],
-            easing: 'easeInOutQuad',
-            duration:900,
-        })
-        anime({
-            targets:".squareContac",
-            translateX:[100,0],
-            easing: 'easeInOutQuad',
-            duration:900,
-        })
+        gsap.to(['.squarePortfolio','.squareContac'],{x:0,duration:0.5,ease: "power1.inOut",});
     },[]);
     
     return (

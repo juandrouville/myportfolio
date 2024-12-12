@@ -22,7 +22,6 @@
     align-self: center;
     align-items:flex-end;
     width: 90vw;
-    max-width:1000vw;
     height: 7vh;
     padding:1vh;
     margin-bottom: 4vh;
@@ -42,7 +41,7 @@
     border:solid 2px #e1dfba;
     box-shadow: 0 0 2px #e1dfba;
     text-shadow: 0 0 2px #e1dfba;
-    transition-delay: 0.2s;
+    transform: translateX(-100px);
     transition: all 0.5s ease-in-out;
     animation:change-shadow infinite ease-in-out 3s;
 }
@@ -60,8 +59,8 @@
     box-shadow: 0 0 2px #e1dfba;
     text-shadow: 0 0 2px #e1dfba;
     cursor: pointer;
+    transform: translateX(100px);
     transition: all 0.5s ease-in-out;
-    transition-delay: 0.2s;
     animation:change-shadow infinite ease-in-out 3s;
 }
 
