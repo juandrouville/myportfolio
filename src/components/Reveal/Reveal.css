@@ -1,5 +1,6 @@
 .conteinerReveal{
     display: flex;
+    flex-direction:row-reverse;
     position: fixed;
     top: 0;
     width: 100%;
@@ -7,14 +8,39 @@
     z-index: 3;
 }
 
-.conteinerReveal h1{
+.first{
     display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
+    width: 100vw;
+    height: 100vh;
+}
+.textReveal{
+    opacity: 0;
     margin: 0;
     padding: 0;
-    font-family: "firstFont";
+}
+
+.welcome{
+    font-family: 'firstFont';
+    font-size: 3em;
+}
+
+.portfolio{
+    position:absolute;
+    top: 5vh;
+    font-family: 'secondFont';
+    font-size: 0.7em;
+}
+
+.by{
     position: absolute;
-    align-self: center;
-    justify-self: center;
+    bottom:5vh;
+    font-family: 'secondFont';
+    font-size: 0.7em;
 }
 
 .block {
@@ -23,83 +49,83 @@
 }
 
 .block-1 {
-    left: 0;
+    right: 95%;
 }
 
 .block-2 {
-    left: 5%;
+    right: 90%;
 }
 
 .block-3 {
-    left: 10%;
+    right: 85%;
 }
 
 .block-4 {
-    left: 15%;
+    right: 80%;
 }
 
 .block-5 {
-    left: 20%;
+    right: 75%;
 }
 
 .block-6 {
-    left: 25%;
+    right: 70%;
 }
 
 .block-7 {
-    left: 30%;
+    right: 65%;
 }
 
 .block-8 {
-    left: 35%;
+    right: 60%;
 }
 
 .block-9 {
-    left: 40%;
+    right: 55%;
 }
 
 .block-10 {
-    left: 45%;
+    right: 50%;
 }
 
 .block-11 {
-    left: 50%;
+    right: 45%;
 }
 
 .block-12 {
-    left: 55%;
+    right: 40%;
 }
 
 .block-13 {
-    left: 60%;
+    right: 35%;
 }
 
 .block-14 {
-    left: 65%;
+    right: 30%;
 }
 
 .block-15 {
-    left: 70%;
+    right: 25%;
 }
 
 .block-16 {
-    left: 75%;
+    right: 20%;
 }
 
 .block-17 {
-    left: 80%;
+    right: 15%;
 }
 
 .block-18 {
-    left: 85%;
+    right: 10%;
 }
 
 .block-19 {
-    left: 90%;
+    right: 5%;
 }
 
 .block-20 {
-    left: 95%;
+    right: 0%;
 }
 
 

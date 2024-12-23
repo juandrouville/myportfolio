@@ -4,12 +4,18 @@ import { gsap } from "gsap";
 
 function Reveal() {
     useEffect(()=>{
-        gsap.to(".block",{ width:0,x:'-180%',ease:'power1.inOut',stagger:0.3,opacity:0,delay:8});
-        gsap.to(".conteinerReveal",{x:"300%",ease:'power1.inOut',duration:3,delay:8});
+        let tl = gsap.timeline();
+        tl.to(".textReveal",{opacity:1,y:'-20%',ease:'power1.inOut',stagger:0.2,duration:0.5,delay:0.2});
+        tl.to(".textReveal",{ delay:1, x:"45%",opacity:0,stagger:0.3,ease:'power1.inOut',duration:0.8});
+        tl.to(".block",{ width:0,x:'80%',ease:'power1.inOut',stagger:0.1,opacity:0,duration:0.8},"<");
     },[])
     return (
         <div className="conteinerReveal">
-            <h1>Welcome!</h1>
+            <div className="first">
+                <h1 className= 'textReveal portfolio'>P0RTF0LI0 JUAN DR0UVILLE</h1>
+                <h1 className = 'textReveal welcome'>WELCOME</h1>
+                <h1 className= 'textReveal by'>BY JUAN DR0UVILLE</h1>
+            </div>
             <div class="block block-1"></div>
             <div class="block block-2"></div>
             <div class="block block-3"></div>
