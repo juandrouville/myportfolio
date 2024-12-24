@@ -15,7 +15,7 @@ function Nav() {
     };
 
     useEffect(()=> {
-        gsap.to(['.squarePortfolio','.squareContac'],{x:0,duration:0.5,ease: "power1.inOut",});
+        gsap.to(['.squarePortfolio','.squareContac'],{x:0,duration:0.8,ease:"power1.inOut",delay:3.5});
     },[]);
     
     return (

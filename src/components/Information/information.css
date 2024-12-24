@@ -24,6 +24,8 @@
     color: #e1dfba;
     font-size: 3em;
     transform: translate(-1vw,7.5vh);
+    opacity: 0;
+    letter-spacing: 0.8em;
 } 
 .lastname{
     display: flex;
@@ -35,16 +37,21 @@
     color:#e1dfba;
     font-size: 7.6em;
     transform: translate(2.5vw,2vh);
-    letter-spacing: 0.03em;
+    letter-spacing: 1em;
+    opacity: 0;
 }
-
+.conteinerLine{
+    display: flex;
+    width: 90vw;
+    align-self: center;
+    justify-self: center;
+}
 .lineNames{
     display: flex;
-    align-self:flex-end;
-    justify-self:flex-end;
-    width: 0vw;
+    opacity: 0;
+    width: 0;
     border: solid 2px #e1dfba;
-    filter: drop-shadow(0 0 1.2px  #e1dfba );
+    filter: drop-shadow(0 0 1.5px  #e1dfba );
 }
 
 @media (max-width:850px){
