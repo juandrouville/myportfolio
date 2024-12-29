@@ -2,28 +2,26 @@
 .conteinerSkills{
     display: flex;
     justify-self: center;
-    margin-top: 2vh;
+    justify-content: space-between;
+    margin-top: 1vh;
     width: 90vw;
 }
 
 .skill{
-    margin: 0;
-    margin-top: 0.1em;
+    margin-top: 0.3vh;
     font-family: 'secondFont';
-    letter-spacing: 0.04em;
+    letter-spacing: 0.03em;
+    font-weight: 600;
+    font-size: 0.9em;
     color: #e1dfba;
-    filter: drop-shadow( 0 0 0.5px #e1dfba );
+    filter: drop-shadow( 0 0 1px #e1dfba );
     cursor: pointer;
     transition:0.5s ease-in-out;
     opacity: 0;
     transform: translateY(2vh);
 }
 
-.skill h3{
-    font-size:4em;
-}
-
 .skill:hover{
-    color:#d1331e;
     transition:0.5s ease-in-out;
+    letter-spacing: 0.2em;
 }

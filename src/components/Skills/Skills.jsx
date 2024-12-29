@@ -7,19 +7,20 @@ import { gsap } from "gsap";
 function Skills(){
     const [openModal , setOpenModal]= useState(false);
     useEffect(()=>{
-        gsap.to(".skill",{delay:4,opacity:1, y:-1,stagger:0.2});
+        gsap.to(".left",{delay:4,opacity:1, y:-1,stagger:0.2});
+        gsap.to(".right",{delay:4,opacity:1, y:-1,stagger:0.2});
     })
     return(
         <div className="conteinerSkills">
-            <div style={{textAlign:'left'}} onClick={()=>setOpenModal(true)}>
-                <h3 className="skill">DEVEL0PER</h3>
-                <h3 className="skill">DESENV0LVED0R</h3>
-                <h3 className="skill">PR0GRAMAD0R</h3>
+            <div style={{textAlign:"left"}} onClick={()=>setOpenModal(true)}>
+                <div className="left skill"># DEVEL0PER</div>
+                <div className="left skill"># DESENV0LVED0R</div>
+                <div className="left skill"># PR0GRAMAD0R</div>
             </div>
-            <div style={{textAlign:'right'}} onClick={()=>setOpenModal(true)}>
-                <h3 className="skill">GRAPHIC DESIGNER</h3>
-                <h3 className="skill">DESING GRÁFIC0</h3>
-                <h3 className="skill">DISEÑAD0R GRÁFIC0</h3>
+            <div  style={{textAlign:"right"}}  onClick={()=>setOpenModal(true)}>
+                <div className="right skill">GRAPHIC DESIGNER #</div>
+                <div className="right skill">DESING GRÁFIC0 #</div>
+                <div className="right skill">DISEÑAD0R GRÁFIC0 #</div>
             </div>
             <Modal open={openModal} onClickClose={()=>setOpenModal(false)}>
                 <DownloadCv/>

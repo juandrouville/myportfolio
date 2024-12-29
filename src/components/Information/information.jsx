@@ -13,8 +13,8 @@ function Information() {
     return (
         <div>
             <div className="containerNames">
-                <h1 className="name">JUAN</h1>
-                <h1 className="lastname">DROUVILLE</h1>
+                <div className="name"><h1>JUAN</h1></div>
+                <div className="lastname"><h1>DROUVILLE</h1></div>
             </div>
             <div className="conteinerLine">
                 <div className="lineNames"></div>
