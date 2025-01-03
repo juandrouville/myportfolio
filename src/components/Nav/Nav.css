@@ -10,22 +10,20 @@
 }
 
 @media (max-width:850px) {
-    .conteiner {
+    .conteinerNav {
         margin-bottom: 6vh;
         margin-top: 1vh;
     }
 }
  
-.conteiner{
+.conteinerNav{
     display: flex;
     justify-content:space-between;
     align-self: center;
     align-items:flex-end;
-    width: 90vw;
-    height: 7vh;
-    padding:1vh;
+    width: 110vw;
+    height: 8vh;
     margin-bottom: 4vh;
-    overflow: hidden;
 }
       
 .squarePortfolio{

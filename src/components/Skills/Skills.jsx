@@ -13,14 +13,14 @@ function Skills(){
     return(
         <div className="conteinerSkills">
             <div style={{textAlign:"left"}} onClick={()=>setOpenModal(true)}>
-                <div className="left skill"># DEVEL0PER</div>
-                <div className="left skill"># DESENV0LVED0R</div>
-                <div className="left skill"># PR0GRAMAD0R</div>
+                <div className="left skill"> DEVEL0PER</div>
+                <div className="left skill"> DESENV0LVED0R</div>
+                <div className="left skill"> PR0GRAMAD0R</div>
             </div>
             <div  style={{textAlign:"right"}}  onClick={()=>setOpenModal(true)}>
-                <div className="right skill">GRAPHIC DESIGNER #</div>
-                <div className="right skill">DESING GRÁFIC0 #</div>
-                <div className="right skill">DISEÑAD0R GRÁFIC0 #</div>
+                <div className="right skill">GRAPHIC DESIGNER </div>
+                <div className="right skill">DESING GRÁFIC0 </div>
+                <div className="right skill">DISEÑAD0R GRÁFIC0 </div>
             </div>
             <Modal open={openModal} onClickClose={()=>setOpenModal(false)}>
                 <DownloadCv/>

@@ -2,22 +2,24 @@
 .conteinerLenguajes{
     display:flex;
     position: absolute;
-    bottom: 4vh;
+    bottom: 3vh;
+    width: 40vw;
     align-self: center;
     justify-content:space-between;
     font-family: 'secondFont';
-    width: 16vw;
-}   @media(max-width:800px){
-    .conteinerLenguajes{
-        padding-left: 3%;
-        padding-right: 3%;
-    }
-}
+}  
 
 .conteinerLenguajes h1{
     color: #e1dfba;
-    font-size: 1em;
+    font-size: 0.7em;
     cursor: pointer;
     filter: drop-shadow(0 0 1px #e1dfba);
     transition: 0.8s ease-in-out;
 } 
+
+/* @media(max-width:800px){
+    .conteinerLenguajes{
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+} */

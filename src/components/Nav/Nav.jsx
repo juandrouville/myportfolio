@@ -16,10 +16,12 @@ function Nav() {
 
     useEffect(()=> {
         gsap.to(['.squarePortfolio','.squareContac'],{x:0,duration:0.8,ease:"power1.inOut",delay:3.5});
+        gsap.to(".conteinerNav",{width:'90vw',ease:"power1.inOut",delay:3.5});
+
     },[]);
     
     return (
-        <div className="conteiner">
+        <div className="conteinerNav">
             <Link to={'/'} style={{ textDecoration: 'none' }}>
                 <div className="squarePortfolio">
                     P0RTF0LI0

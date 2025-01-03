@@ -15,15 +15,18 @@
     filter: drop-shadow( 0 0 1.2px #e1dfba );
     cursor:default;
 }
+
 .name{
     display:flex;
-    width: 50%;
+    flex-direction: row-reverse;
+    width: 15%;
     font-family: 'secondfont';
     font-size: 1.8em;
     color: #e1dfba;
     opacity: 0;
     letter-spacing: 0.8em;
-    }
+    transform: translateY(1em);
+}
 
 .lastname{
     display: flex;
@@ -35,12 +38,14 @@
     letter-spacing: 1em;
     opacity: 0;
 }
+
 .conteinerLine{
     display: flex;
     width: 90vw;
     align-self: center;
     justify-self: center;
 }
+
 .lineNames{
     display: flex;
     opacity: 0;
@@ -49,24 +54,22 @@
     filter: drop-shadow(0 0 1.5px  #e1dfba );
 }
 
-/* @media (max-width:850px){
+@media (max-width:850px){
+
     .containerNames{
-        width:90vw;
-        align-self: center;
-        height: 11vh;
-        justify-content: center;
-        background-color: aqua;
+        margin-top: 3vh;
     }
+    
     .name{
-        width: 50%;
-        font-size:1.89em;
-        transform: translate(5vw,-4vh);
+        width: 40%;
+        font-size: 1em;
+        justify-content: start;
     }
+
     .lastname{
-        width: 50%;
-        font-size:3em;
-        letter-spacing: 0.06em;
-        transform: translate(13vw,-5vh);
+        width: 80%;
+        font-size: 1.9em;
     }
-} */
+    
+} 
 
