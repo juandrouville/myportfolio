@@ -1,14 +1,19 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import "./Lenguajes.css";
 import { Language } from '../../context/languageContext';
+import { gsap } from 'gsap';
 
 function Lenguajes(){
     const { setLanguage , language } = useContext(Language);
-    console.log(language);
+
     const changeLanguage= (event) => {
         var language = event.target.id;
         setLanguage(language);
-    }
+    };
+
+    useEffect(()=>{
+        gsap.to(".conteinerLenguajes",{opacity:1, y:'-2vh', delay:3.5, ease:'Power1.easeIn'});
+    })
     return(
         <div className="conteinerLenguajes">
             { language === 'esp' ? 
