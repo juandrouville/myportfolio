@@ -1,6 +1,5 @@
 import React,{ useContext } from "react";
 import "./Presentation.css";
-import img from '../../portfolio.png';
 import and from "./and.svg";
 import { Language } from '../../context/languageContext';
 import { Link } from 'react-router-dom';
@@ -14,9 +13,6 @@ function Presentation(){
 
     return(
         <div className="conteinerPresentation">
-            <div className="conteinerImg">
-                <img src={img} alt='My photo portfolio'/>
-            </div>
             <div className="conteinerText">
                 <Link to = "/designer" style={{ textDecoration: 'none',display:'flex'}}> 
                     <h1 className="professionTitle">DESIGNER</h1>

@@ -32,25 +32,7 @@
     transform: translateY(-5px) scale(1.01) ;
     transition: 0.5s;   
 }
-.conteinerImg{
-    display: flex;
-    width: 40%;
-    height:62vh;
-    overflow: hidden;
-    border-radius: 5px;
-}  
-.conteinerImg img{
-    height: 110%;
-    object-fit: cover;
-    object-position: bottom;
-    transform: translateY(-10%);
-}
-.textPresentation{
-    font-family: textFont;
-    color: #122824;
-    font-size: 18px;
-    padding-right: 2%;
-}
+
 .dowloadButton{
     display: flex;
     position:relative;
