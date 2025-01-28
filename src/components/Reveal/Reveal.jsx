@@ -7,7 +7,7 @@ function Reveal() {
         let tl = gsap.timeline();
         tl.to(".textReveal",{opacity:1,y:'-20%',ease:'power1.inOut',stagger:0.2,duration:0.5,delay:0.2});
         tl.to(".textReveal",{ delay:1, x:"45%",opacity:0,stagger:0.3,ease:'power1.inOut',duration:0.8});
-        tl.to(".block",{ width:0,x:'90%',ease:'power1.inOut',stagger:0.1,opacity:0,duration:0.8},"<");
+        tl.to(".block",{ width:0,x:'80%',ease:'power1.inOut',stagger:0.1,opacity:0,duration:0.8},"<");
         tl.to(".conteinerReveal",{width:0,height:0})
     },[])
     return (
