@@ -54,10 +54,12 @@
     filter: drop-shadow(0 0 1.5px  #e1dfba );
 }
 
-@media (max-width:850px){
+@media only screen and (min-device-width: 480px){
 
     .containerNames{
         margin-top: 3vh;
+        align-self: center;
+        justify-self: center;
     }
     
     .name{
