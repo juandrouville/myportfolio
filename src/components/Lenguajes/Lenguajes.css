@@ -1,5 +1,5 @@
 
-.conteinerLenguajes{
+.containerLenguajes{
     display:flex;
     flex-wrap:wrap;
     position: absolute;
@@ -11,7 +11,7 @@
     opacity: 0;
 }  
 
-.conteinerLenguajes h1{
+.containerLenguajes h1{
     color: #e1dfba;
     font-size: 0.8em;
     cursor: pointer;
@@ -20,10 +20,10 @@
 } 
 
 @media( width <= 780px ){
-    .conteinerLenguajes{
+    .containerLenguajes{
         width: 45vw;
     }
-    .conteinerLenguajes h1{
+    .containerLenguajes h1{
         font-size: 0.6em;
     }
 }

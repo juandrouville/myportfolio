@@ -8,14 +8,15 @@ function Lenguajes(){
 
     const changeLanguage= (event) => {
         var language = event.target.id;
+        console.log('set',language);
         setLanguage(language);
     };
 
     useEffect(()=>{
-        gsap.to(".conteinerLenguajes",{opacity:1, y:'-2vh', delay:3.5, ease:'Power1.easeIn'});
+        gsap.to(".containerLenguajes",{opacity:1, y:'-2vh', delay:3.5, ease:'Power1.easeIn'});
     })
     return(
-        <div className="conteinerLenguajes">
+        <div className="containerLenguajes">
             { language === 'esp' ? 
                 ( 
                     <h1 id='esp' onClick={changeLanguage} style={{color:"#d1331e",filter: 'drop-shadow(0 0 1px #d1331e)'}}>{'{ ESPAÑ0L }'}</h1>
