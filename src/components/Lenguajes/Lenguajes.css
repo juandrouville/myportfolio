@@ -1,6 +1,7 @@
 
 .conteinerLenguajes{
     display:flex;
+    flex-wrap:wrap;
     position: absolute;
     bottom: 1vh;
     width: 12vw;
@@ -18,8 +19,11 @@
     transition: 1s ease-in-out;
 } 
 
-@media(max-width:800px){
+@media( width <= 780px ){
     .conteinerLenguajes{
         width: 45vw;
+    }
+    .conteinerLenguajes h1{
+        font-size: 0.6em;
     }
 }

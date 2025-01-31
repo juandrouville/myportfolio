@@ -57,13 +57,12 @@
     filter: drop-shadow(0 0 1.5px  #e1dfba );
 }
 
-@media ( max-width:780px ){
+@media ( width <= 780px ){
 
     .containerNames{
         margin-top: 2vh;
         justify-self: center;
         align-self: center;
-        background-color: yellow;
     }
     
     .name{
