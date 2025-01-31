@@ -8,13 +8,6 @@
         text-shadow: 0 0 2px #e1dfba;
     }
 }
-
-@media (max-width:850px) {
-    .conteinerNav {
-        margin-bottom: 6vh;
-        margin-top: 1vh;
-    }
-}
  
 .conteinerNav{
     display: flex;
@@ -22,6 +15,7 @@
     align-self: center;
     align-items:flex-end;
     width: 110vw;
+    min-width: 280px;
     height: 8vh;
     margin-bottom: 4vh;
 }
@@ -59,12 +53,3 @@
     transform: translateX(100px);
     animation:change-shadow infinite ease-in-out 3s;
 }
-
-
-    
-
-
-
-    
-
-

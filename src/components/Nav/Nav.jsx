@@ -5,7 +5,6 @@ import Modal from '../Modal/Modal';
 import Contact from '../Contact/Contact';
 import { Link } from "react-router-dom";
 import { gsap } from "gsap";
-import { useGSAP } from "@gsap/react";
 
 function Nav() {
     const [openModal, setOpenModal] = React.useState(false);
@@ -15,7 +14,7 @@ function Nav() {
         por: 'C0NTAT0',
     };
 
-    useGSAP(()=> {
+    useEffect(()=> {
         gsap.to(['.squarePortfolio','.squareContac'],{x:0,duration:0.8,ease:"power1.inOut",delay:3.5});
         gsap.to(".conteinerNav",{width:'90vw',ease:"power1.inOut",delay:3.5});
     },[]);
@@ -37,6 +36,3 @@ function Nav() {
 };
 
 export default Nav;
-
-
-

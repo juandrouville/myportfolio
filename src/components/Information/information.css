@@ -1,10 +1,13 @@
-
+.containerInformation{
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    align-items: center;
+    justify-content: center;
+}
 .containerNames{
     display: flex;
     flex-direction: column;
-    justify-content:flex-end;
-    justify-self: center;
-    margin-top: 5vh;
     width:90vw;
     color:#e1dfba;
 }
@@ -39,14 +42,14 @@
     opacity: 0;
 }
 
-.conteinerLine{
+.containerLine{
     display: flex;
     width: 90vw;
     align-self: center;
     justify-self: center;
 }
 
-.lineNames{
+.line{
     display: flex;
     opacity: 0;
     width: 0;
@@ -54,12 +57,13 @@
     filter: drop-shadow(0 0 1.5px  #e1dfba );
 }
 
-@media only screen and (min-device-width: 480px){
+@media ( max-width:780px ){
 
     .containerNames{
-        margin-top: 3vh;
-        align-self: center;
+        margin-top: 2vh;
         justify-self: center;
+        align-self: center;
+        background-color: yellow;
     }
     
     .name{
