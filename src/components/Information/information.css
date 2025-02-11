@@ -2,9 +2,21 @@
     display: flex;
     flex-direction: column;
     width: 90vw;
-    align-items: center;
-    justify-content: center;
 }
+
+.imageJuan{
+    display: flex;
+    position: absolute;
+    height:30vh;
+    width:auto;
+    object-fit: contain;
+    top:15vh;
+    left:15vw;
+    clip-path: inset(100% 0 0 0);
+    transition: clip-path 1s ease-in-out;
+    opacity: 0;
+}
+
 .containerNames{
     display: flex;
     flex-direction: column;
@@ -60,9 +72,15 @@
 @media ( width <= 780px ){
 
     .containerNames{
-        margin-top: 2vh;
+        position: absolute;
+        bottom: 15vh;
         justify-self: center;
         align-self: center;
+    }
+
+    .imageJuan{
+        left: 5vw;
+        top:25vh;
     }
     
     .name{
