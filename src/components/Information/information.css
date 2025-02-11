@@ -79,8 +79,9 @@
     }
 
     .imageJuan{
-        left: 5vw;
+        left: 10vw;
         top:25vh;
+        height: 25vh;
     }
     
     .name{
