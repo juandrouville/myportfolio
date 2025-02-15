@@ -17,14 +17,15 @@
     opacity: 0;
 }
 
-.containerNames{
+.containerPresentation{
     display: flex;
     flex-direction: column;
+    position: relative;
     width:90vw;
     color:#e1dfba;
 }
 
-.containerNames h1{
+.containerPresentation h1{
     margin: 0;
     padding: 0;
     filter: drop-shadow( 0 0 1.2px #e1dfba );
@@ -54,6 +55,19 @@
     opacity: 0;
 }
 
+.textPresentation{
+    display: flex;
+    position: absolute;
+    width: 30vw;
+    text-align: justify;
+    align-self: flex-end;
+    margin-top: 3em;
+    clip-path: inset(0 0 100% 0);
+    transition: clip-path 1s ease-in-out;
+    opacity: 0;
+}
+
+
 .containerLine{
     display: flex;
     width: 90vw;
@@ -71,16 +85,23 @@
 
 @media ( width <= 780px ){
 
-    .containerNames{
+    .containerPresentation{
         position: absolute;
-        bottom: 15vh;
-        justify-self: center;
-        align-self: center;
+        justify-content: end;
+        bottom: 8vh;
+        height:70vh;
+    }
+
+    .textPresentation{
+        position: absolute;
+        top: 2vh;
+        width:45vw;
+        font-size: 0.9em;
     }
 
     .imageJuan{
-        left: 10vw;
-        top:25vh;
+        left:8vw;
+        top:20vh;
         height: 25vh;
     }
     

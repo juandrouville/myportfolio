@@ -8,9 +8,9 @@ function Reveal() {
         tl.to(".textReveal",{opacity:1,ease:'power1.inOut',stagger:0.2,duration:0.5,delay:0.2});  
         tl.to(".textReveal",{ x:'80%',delay:1,opacity:0,stagger:0.3,ease:'power1.inOut',duration:1.4});
         tl.to(".block",{ backgroundColor:'#d1331e',width:0,ease:'power1.inOut',stagger:0.1,duration:0.8},"<");
-        tl.to(".intro",{width:0,height:0});
-        tl.to(".containerReveal",{width:0,height:0});
+        tl.to(".containerReveal",{display:'none'});
     },[])
+
     return (
         <div className="containerReveal">
             <div className="intro">
