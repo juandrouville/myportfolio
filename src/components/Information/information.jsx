@@ -26,7 +26,7 @@ function Information() {
             <div className="containerPresentation">
                 <div className="name"><h1>JUAN</h1></div>
                 <div className="lastname"><h1>DROUVILLE</h1></div>
-                <p className="textPresentation">{myPresentationText[language]}</p>
+                <p className="textPresentation">{myPresentationText[language]}</p> 
                 <div className="containerLine">
                     <div className="line"></div>
                 </div>

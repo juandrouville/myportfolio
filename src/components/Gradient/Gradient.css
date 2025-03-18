@@ -13,8 +13,8 @@
     background-image:linear-gradient(90deg, #e1dfba 10%, #d1331e 80% );
 }
 
-@media ( width <= 780px ){
+/* @media ( width <= 780px ){
     .gradient{
         height: 15vh;
     }
-}
+} */
