@@ -56,7 +56,7 @@ function Contact(){
                         <h2>WHATSAPP</h2>
                     </div>
                     <div className="links">
-                        <a href="https://www.instagram.com/by.juan__/" target={"_blank"} rel="noreferrer">
+                        <a href="https://www.instagram.com/juandrouville/" target={"_blank"} rel="noreferrer">
                             <img src = {instagram} alt='icon'/>
                         </a>
                         <h2>INSTAGRAM</h2>
