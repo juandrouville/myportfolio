@@ -29,7 +29,7 @@
     padding: 0.5rem;
     font-family:'secondFont';
     color: #e1dfba;
-    font-size: 0.7rem;
+    font-size:clamp( 0.7em, 0.7vw, 0.8em);
     border:solid 2px #e1dfba;
     box-shadow: 0 0 2px #e1dfba;
     text-shadow: 0 0 2px #e1dfba;
@@ -45,7 +45,7 @@
     background-color: #161410;
     font-family: 'secondFont';
     color: #e1dfba;
-    font-size: 0.7rem;
+    font-size:clamp( 0.7em, 0.7vw, 0.8em);
     border:solid 2px #e1dfba;
     box-shadow: 0 0 2px #e1dfba;
     text-shadow: 0 0 2px #e1dfba;

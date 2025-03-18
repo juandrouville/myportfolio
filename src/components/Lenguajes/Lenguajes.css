@@ -1,10 +1,10 @@
 
 .containerLenguajes{
     display:flex;
-    flex-wrap:wrap;
+    flex-wrap:nowrap;
     position: absolute;
     bottom: 1vh;
-    width: 12vw;
+    width: clamp(10em,12vw,15em);
     align-self: center;
     justify-content:space-around;
     font-family: 'secondFont';
@@ -13,17 +13,11 @@
 
 .containerLenguajes h1{
     color: #e1dfba;
-    font-size: 0.8em;
+    font-size:clamp( 0.6em, 0.8vw, 1em);
+    white-space: nowrap;
     cursor: pointer;
     filter: drop-shadow(0 0 1px #e1dfba);
     transition: 1s ease-in-out;
 } 
 
-@media( width <= 780px ){
-    .containerLenguajes{
-        width: 45vw;
-    }
-    .containerLenguajes h1{
-        font-size: 0.6em;
-    }
-}
+
