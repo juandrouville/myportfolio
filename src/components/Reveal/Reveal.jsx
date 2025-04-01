@@ -17,26 +17,26 @@ function Reveal() {
                 <h1 className = 'textReveal welcome'>WELCOME</h1>
                 <h1 className= 'textReveal portfolio'>MY P0RTF0LI0</h1>
             </div>
-            <div class="block block-1 "></div>
-            <div class="block block-2 "></div>
-            <div class="block block-3 "></div>
-            <div class="block block-4 "></div>
-            <div class="block block-5 "></div>
-            <div class="block block-6 "></div>
-            <div class="block block-7 "></div>
-            <div class="block block-8 "></div>
-            <div class="block block-9 "></div>
-            <div class="block block-10 "></div>
-            <div class="block block-11 "></div>
-            <div class="block block-12 "></div>
-            <div class="block block-13 "></div>
-            <div class="block block-14 "></div>
-            <div class="block block-15 "></div>
-            <div class="block block-16 "></div>
-            <div class="block block-17 "></div>
-            <div class="block block-18 "></div>
-            <div class="block block-19 "></div>
-            <div class="block block-20 "></div>
+            <div className="block block-1 "></div>
+            <div className="block block-2 "></div>
+            <div className="block block-3 "></div>
+            <div className="block block-4 "></div>
+            <div className="block block-5 "></div>
+            <div className="block block-6 "></div>
+            <div className="block block-7 "></div>
+            <div className="block block-8 "></div>
+            <div className="block block-9 "></div>
+            <div className="block block-10 "></div>
+            <div className="block block-11 "></div>
+            <div className="block block-12 "></div>
+            <div className="block block-13 "></div>
+            <div className="block block-14 "></div>
+            <div className="block block-15 "></div>
+            <div className="block block-16 "></div>
+            <div className="block block-17 "></div>
+            <div className="block block-18 "></div>
+            <div className="block block-19 "></div>
+            <div className="block block-20 "></div>
         </div>
     );
 };

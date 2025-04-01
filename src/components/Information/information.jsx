@@ -7,6 +7,7 @@ import Gradient from "../Gradient/Gradient";
 import {gsap} from 'gsap';
 import imageJuan from '../../FOTO-CURRICULO.jpg';
 import { useGSAP } from '@gsap/react';
+import ButtonDownload from "../DownloadCv/ButtonDownload/ButtonDownload";
 
 function Information() {
     const { language } = useContext(Language);
@@ -25,7 +26,7 @@ function Information() {
                 <img src={imageJuan} className="imageJuan"/>
             <div className="containerPresentation">
                 <div className="name"><h1>JUAN</h1></div>
-                <div className="lastname"><h1>DROUVILLE</h1></div>
+                <div className="lastname"><ButtonDownload/><h1>DROUVILLE</h1></div>
                 <p className="textPresentation">{myPresentationText[language]}</p> 
                 <div className="containerLine">
                     <div className="line"></div>
