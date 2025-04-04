@@ -38,7 +38,7 @@
 } 
 .toClose h1{
     font-family: secondFont;
-    font-size: 3vw;
+    font-size: clamp(1em, 2vw, 2em);
     color:#e1dfba;
     text-shadow: 0 0 2px #e1dfba;
     padding-right: 2%;

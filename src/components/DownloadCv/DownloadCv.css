@@ -1,47 +1,38 @@
+
+@keyframes changeColorLine{
+    0% { background-color: #e1dfba;}
+    100% { background-color: #d1331e; }
+}
+
 .conteinerDownload{
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: 100%;
+    
+}
+
+.titleModalDownload{
+    width: 90%;
+    padding-bottom: 3vh;
+    text-align: center;
+    font-family: firstFont;
+    color:#e1dfba;
+    font-size: clamp(1.5em,3vw, 3em);
+    border-bottom: solid 3px #e1dfba;
+    filter: drop-shadow( 0 0 1px #e1dfba );
 }
     
-.arrow{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 2vh;
-    width: 8vw;
-    animation: float 4s ease-in-out infinite;
-    filter: drop-shadow(0 0 1px #e1dfba );
-}
-.arrow img{
-    object-fit: cover;
-    object-position: center;
-}
-.rectangle{
-    background-color:#e1dfba ;
-    width: 10vw;
-    height: 3vh;
-    margin-top: 2vh ;
-    margin-bottom: 4vh;
-    filter: drop-shadow(0 0 1px #e1dfba );
-}
 .conteinerOptions{
     display: flex;
     width: 80%;
-    border-bottom: solid 4px #e1dfba;
     margin-top: 2%;
     filter: drop-shadow(0 0 1px #e1dfba);
 }
-.conteinerOptions h1{
-    font-family: secondFont;
-    font-size: 1em;
-    color:#e1dfba;
-}
+
 .conteinerOptions h2{
     font-family: firstFont;
-    font-size: 1em;
+    font-size: clamp(1em,1.5vw, 1.5em);
     color: #e1dfba;
     letter-spacing: 0.08em;
 }
@@ -55,31 +46,26 @@
 .conteinerOptions .downloadLink{
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
-    font-family: secondFont;
 }
 
-@media (max-width:800px){
-    .conteinerDownload{
-        padding-top: 20%;
-    }
-    .arrow{
-        width:18vw;
-    }
-    .rectangle{
-        width: 22vw;
-        height: 2vh;
-    }
-    .conteinerOptions{
-        border-bottom: solid 2px #e1dfba;
-        width:90%;
-        margin-top: 6%;
-    }
-    .conteinerOptions h1{
-        font-size: 8px;
-    }
-    .conteinerOptions h2{
-        font-size: 7px;
-    }
+.conteinerBottomLine{
+    position: absolute;
+    bottom: 1vh;
+    width: 100%;
+}
+
+.lineBottomOptions{
+    width: 0%;
+    height: 2px;
+    transition: all 2s ease-in-out;
+    background-color: #e1dfba;
+}
+
+.conteinerOptions:hover .lineBottomOptions{
+    width: 100%;
+    transition: all 2s ease-in-out;
+    animation: changeColorLine 2s ;
+    background-color: #d1331e;
 }

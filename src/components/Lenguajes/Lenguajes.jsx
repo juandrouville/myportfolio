@@ -8,7 +8,6 @@ function Lenguajes(){
 
     const changeLanguage= (event) => {
         var language = event.target.id;
-        console.log('set',language);
         setLanguage(language);
     };
 
