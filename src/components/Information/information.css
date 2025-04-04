@@ -13,7 +13,7 @@
     top:15vh;
     left:15vw;
     clip-path: inset(100% 0 0 0);
-    transition: clip-path 1s ease-in-out;
+    transition: clip-path 0.5s ease-in-out;
     opacity: 0;
 }
 
@@ -120,6 +120,10 @@
     .lastname{
         width: 80%;
         flex-direction: row;
+    }
+
+    .line{
+        border: solid 1.5px #e1dfba;
     }
     
 } 

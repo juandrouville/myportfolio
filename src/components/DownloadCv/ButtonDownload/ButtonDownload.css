@@ -5,6 +5,9 @@
     margin-left: 0.3em;
     cursor: pointer;
     filter: drop-shadow( 0 0 1.2px #e1dfba );
+    transform: translateY(-200%);
+    clip-path: inset(0 0 100% 0);
+    transition: clip-path 2s ease-in-out;
 }
 
  @media ( width <= 780px ){
