@@ -1,7 +1,7 @@
 
 @keyframes changeColorLine{
-    0% { background-color: #e1dfba;}
-    100% { background-color: #d1331e; }
+    0% { background-color: #e1dfba; filter: drop-shadow( 0 0 2px #e1dfba );}
+    100% { background-color: #d1331e; filter: drop-shadow( 0 0 2px #d1331e ); }
 }
 
 .conteinerDownload{
@@ -9,8 +9,8 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
-    
 }
+    
 
 .titleModalDownload{
     width: 90%;
@@ -25,9 +25,9 @@
     
 .conteinerOptions{
     display: flex;
+    flex-direction: column;
     width: 80%;
     margin-top: 2%;
-    filter: drop-shadow(0 0 1px #e1dfba);
 }
 
 .conteinerOptions h2{
@@ -35,13 +35,13 @@
     font-size: clamp(1em,1.5vw, 1.5em);
     color: #e1dfba;
     letter-spacing: 0.08em;
+    white-space: nowrap;
 }
 .conteinerOptions a{
     text-decoration: none;
     outline: none;
     border:none;
-    color:#e1dfba;
-    font-family: secondFont;
+    filter: drop-shadow( 0 0 1px #e1dfba );
 }
 .conteinerOptions .downloadLink{
     display: flex;
@@ -51,8 +51,6 @@
 }
 
 .conteinerBottomLine{
-    position: absolute;
-    bottom: 1vh;
     width: 100%;
 }
 
@@ -61,6 +59,7 @@
     height: 2px;
     transition: all 2s ease-in-out;
     background-color: #e1dfba;
+    filter: drop-shadow( 0 0 2px #e1dfba );
 }
 
 .conteinerOptions:hover .lineBottomOptions{
@@ -68,4 +67,5 @@
     transition: all 2s ease-in-out;
     animation: changeColorLine 2s ;
     background-color: #d1331e;
+    filter: drop-shadow( 0 0 2px #d1331e );
 }
