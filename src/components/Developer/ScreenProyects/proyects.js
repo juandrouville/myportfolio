@@ -1,5 +1,3 @@
-import computer from '../macbook.png';
-import phone from '../phone.png'; 
  
 export const objDog = {
     description:{
@@ -8,7 +6,6 @@ export const objDog = {
     },
     title: 'MY DOG APP', 
     goSite:'https://mydog-app.web.app/',
-    icon: computer,
     tools:["Html","JavaScript","NodeJS","Css","ReactJS","Redux","Postgress","Sequelize"],
 };
 export const objWine = {
@@ -16,18 +13,26 @@ export const objWine = {
      esp:"Aplicación Web, proyecto grupal para el curso fullstack de Soy Henry, utilice:",
      por:"Aplicativo Web, projeto de grupo para curso fullstack de Soy Henry, utilizei",
     },
-    icon: computer,
     goSite:"https://pf-vinos-ecommerce.vercel.app/",
     title: 'WINE APP',
     tools:["Html","JavaScript","NodeJS","Css","ReactJS","Redux","Postgress","Sequelize"],
 };
 export const objSaturno = {
     description : {
-        esp:"Aplicación mobile para sistema de salud argentino, donde actue como front-end, utilice:",
-        por:"Aplicativo mobile para o sitema de saúde argentino, onde atuei como front-end, utilizei:",
+        esp:"Aplicación mobile para sistema de salud argentino,\n donde actue como front-end,donde actue como front-end,donde actue como front-end,donde actue como front-end,donde actue como front-end,donde actue como front-end,donde actue como front-end,donde actue como front-end,donde actue como front-end,donde actue como front-end,donde actue como front-end,donde actue como front-end,donde actue como front-end,donde actue como front-end,",
+        por:"Aplicativo mobile para o sitema de saúde argentino, \n onde atuei como front-end,donde actue como front-end,donde actue como front-end,donde actue como front-end,donde actue como front-end,donde actue como front-end,donde actue como front-end,donde actue como front-end,donde actue como front-end,donde actue como front-end,donde actue como front-end,donde actue como front-end,donde actue como front-end,donde actue como front-end,",
     },
-    icon:phone,
-    goSite:false,
+    goSite:"https://gitlab.com/dev-salud/turnosapp",
     title:"SATURNO APP",
     tools:["JavaScript","NodeJS","React Native","Expo","Css"],
+};
+
+export const objMyPortfolio = {
+    description:{
+        esp:"Mi propio sitio web, desarrollado y diseñado por mi,donde utilize todas las herramientas que tengo para mostrar mi trabajo y ademas, mostrar de lo que seria capaz de entregar.",
+        por:"Meu proprio site web, desenvolvido e desenhado por mim, onde utilizei todas as ferramentas que conheço e apresentei o que eu posso oferecer." 
+    },
+    goSite: "https://juan-drouville.web.app/",
+    title:'MY PORTFOLIO',
+    tools:["JavaScript","NodeJS","ReactJS","Css"],
 };

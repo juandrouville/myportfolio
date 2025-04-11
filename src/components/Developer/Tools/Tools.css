@@ -1,8 +1,8 @@
 .conteinerTools{
     display: flex;
-    align-items: flex-start;
+    
     flex-wrap: wrap;
-    width: 100%;
+    width: 50%;
     margin-top: 1vh;
 }
 
@@ -23,6 +23,7 @@
 }
 .iconText h3{
     font-family: textFont;
+    color:#e1dfba;
     font-size: 12px;
     text-align: center;
     white-space: nowrap;

@@ -33,15 +33,15 @@
     align-items: center;
     justify-content: flex-end;
     width: 100%;
-    height: 10%;
+    height: 4.5vh;
     cursor: pointer;
 } 
 .toClose h1{
     font-family: secondFont;
-    font-size: clamp(1em, 2vw, 2em);
+    font-size: clamp(1em, 1.7vw, 2em);
     color:#e1dfba;
     text-shadow: 0 0 2px #e1dfba;
-    padding-right: 2%;
+    padding-right:0.5em;
     transition: ease-in-out 0.8s;
 }
 .toClose h1:hover{
@@ -49,18 +49,14 @@
     transition: ease-in-out 0.8s;
     text-shadow: 0 0 2px #d1331e;
 }
-@media(max-width:800px){
-    .toClose{
-        height: 25px;
-    }
-}
-    
 
 .containerChildren{
     display:flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
+    align-items: center;
+    overflow: hidden;
 }
 
 .borderModal{
@@ -71,8 +67,8 @@
     width: 95%;
     height: 95%;
     margin:2%;
-    border: solid 4px #e1dfba;
-    box-shadow: 0 0 3px #e1dfba;
+    border: solid 3px #e1dfba;
+    box-shadow: 0 0 2px #e1dfba;
 }   @media(max-width:800px){
     .borderModal{
         border: solid 2px #e1dfba;

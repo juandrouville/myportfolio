@@ -1,19 +1,23 @@
-import React from "react";
+import React, {useState} from "react";
 import './ScreenProyects.css';
-import Nav from '../../Nav/Nav';
 import CardProyect from "../CardProyect/CardProyect";
-import { objSaturno, objWine, objDog } from './proyects';
+import Modal from "../../Modal/Modal";
+import { objSaturno, objWine, objDog, objMyPortfolio } from './proyects';
 
 function ScreenProyects(){
+    const [openModal, setOpenModal] = useState(false);
     return (
         <div className="conteinerProyects">
-            <Nav/>
             <h1>PROJETOS</h1>
-            <div className="proyectsList">
+            <div className="proyectsList" onClick={()=>setOpenModal(true)}>
                 <CardProyect  {...objSaturno}/>
-                <CardProyect {...objWine}/>
+                {/* <CardProyect {...objWine}/>
                 <CardProyect {...objDog}/>
+                <CardProyect {...objMyPortfolio}/> */}
             </div>
+            <Modal open={openModal} onClickClose={() => setOpenModal(false)}>
+                <CardProyect  {...objSaturno}/>
+            </Modal>
         </div>
     );
 };
