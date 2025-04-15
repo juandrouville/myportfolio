@@ -8,9 +8,8 @@
     width: 100%;
     height: 100%;
     grid-template-columns: repeat(2, 1fr) ;
-    grid-template-rows: auto repeat(2,1fr);
-    gap:1vw;
-    margin-top: 2vh;
+    grid-template-rows: auto auto 1fr;
+    gap:1em;
 }
 .conteinerCardTitle{
     width: 100%;
@@ -34,8 +33,10 @@
 
 .conteinerDecoration{
     display: grid;
+    grid-row: 2/3;
     grid-template-rows: 1fr 0.6fr ;
     gap:0.5em;
+    height: clamp(100px,15vh,25vh);
 }
 
 .squareDecoration{
@@ -46,7 +47,7 @@
 
 .descriptionText{
     margin: 0;
-    grid-row:2/5;
+    grid-row:2/4;
     grid-column: 2/3;
     display: flex;
     text-align: justify;
@@ -67,8 +68,8 @@
     border-bottom: solid 2px #e1dfba;
     padding-bottom: 0.3em;
     filter: drop-shadow( 0 0 0.5px #e1fdba);
-
 }
+
 
 .buttonLink{
     grid-column: 2/3;
@@ -89,10 +90,3 @@
 .buttonLink:hover{
     transform: translate(0%,-10%);
 }
-
-
-
-
-
-
-

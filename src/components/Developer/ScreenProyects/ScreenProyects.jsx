@@ -16,7 +16,7 @@ function ScreenProyects(){
                 <CardProyect {...objMyPortfolio}/> */}
             </div>
             <Modal open={openModal} onClickClose={() => setOpenModal(false)}>
-                <CardProyect  {...objSaturno}/>
+                <CardProyect  {...objDog}/>
             </Modal>
         </div>
     );

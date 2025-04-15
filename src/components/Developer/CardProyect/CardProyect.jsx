@@ -23,7 +23,7 @@ function CardProyect(props) {
                     <div className="squareDecoration"></div>
                 </div>
                 <p className="descriptionText">{description && description[language]}</p>
-                <div>
+                <div className="toolsArea">
                     <h1 className='toolsTitle'>FERRAMENTAS</h1>
                     <Tools tools={tools}/>
                 </div>

@@ -23,8 +23,8 @@
     transform: translateY(-100vh);
 }   @media(max-width:800px){
     .containerModal{
-        width:80%;
-        height: 50vh;
+        width:90%;
+        height: 75%;
     }
 }
 
@@ -38,7 +38,7 @@
 } 
 .toClose h1{
     font-family: secondFont;
-    font-size: clamp(1em, 1.7vw, 2em);
+    font-size: clamp(1em, 1.5vw, 2em);
     color:#e1dfba;
     text-shadow: 0 0 2px #e1dfba;
     padding-right:0.5em;
