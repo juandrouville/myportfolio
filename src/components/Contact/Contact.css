@@ -1,7 +1,7 @@
 
 @keyframes float {
 	0% { transform: translatey(0px); }
-	50% { transform: translatey(-10px); }
+	50% { transform: translatey(-7px); }
 	100% { transform: translatey(0px); }
 }
 .conteinerContact{
@@ -11,54 +11,49 @@
     justify-content: center;
     width: 100%;
     height: 100%;
+    padding-bottom: 1em;
 }
 .lineBottom{
     width:90%;
     border: solid 2px #e1dfba;
     align-self: center;
-    margin-bottom: 2vh;
+    margin-bottom: 1em;
+    margin-top: 0.5em;
     filter: drop-shadow(0 0 1.2px #e1dfba );
 }
 .conteinerContact h1{
     font-family: firstFont;
-    font-size: 4em;
+    font-size: clamp(2.3em,3.5vw, 3.5em);
     margin: 0;
     padding: 0;
     color: #e1dfba;
     filter: drop-shadow(0 0 1.5px #e1dfba );
-    width: 95%;
+    width: 90%;
     text-align: center;
     letter-spacing: 0.04em;
 }   
     
 .conteinerIcons{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
+    display: grid;
+    grid-template-columns: repeat( 3, 1fr);
+    justify-items: center;
+    row-gap: 1em;
+    width: 80%;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
-.divisionIcons{
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 70%;
-    height: 50%;
-    margin-bottom: 2%;
-} 
+
 .links{
     display: flex;
     flex-direction: column;
-    justify-content:flex-end;
     align-items: center;
-    width: 15vw;
+    justify-content: flex-end;
+    width:clamp( 4em, 12vw, 6em);
     height: 100%;
-    margin-right: 1%;
     transition: all 0.5s ease-in-out;
 } 
 .links img{
-    width:4vw;
+    width: clamp( 2.5em, 5vw, 4em);
     object-fit: cover;
     object-position: center;
     margin-left: 1%;
@@ -67,36 +62,12 @@
     animation: float 6s ease-in-out infinite;
 } 
 .links:hover{
-    transform: scale(1.2) translateY(-1.5px);
+    transform: scale(1.1) translateY(-1.2px);
     transition: all 0.5s ease-in-out;
 } 
 .links h2{
     font-family: "secondFont";
-    font-size: 1em;
+    font-size: clamp(0.7em, 1vw,1.5em);
     text-shadow: 0 0 2px #e1dfba;
     color:#e1dfba;
 } 
-
-@media(max-width:800px){
-    .conteinerContact{
-        height: 40vh;
-    }
-    .links{
-        font-size: 0.5em;
-        width: 20vw;
-    }
-    .links img{
-        width: 6vw;
-        
-    }
-    .divisionIcons{
-        justify-content:center;
-        align-items: center;
-        width: 100%;
-        height: 40%;
-    }
-    .conteinerContact h1{
-        padding-bottom: 2%;
-        font-size: 2.5em;
-    }
-}

@@ -3,7 +3,7 @@
     width: 80%;
     grid-template-columns:  repeat( auto-fit, minmax(1vw,1fr));
     gap: 0.5em 2em;
-    margin-bottom: 1.5vh;
+    margin-top: 3vh;
 }
 
 .iconText{

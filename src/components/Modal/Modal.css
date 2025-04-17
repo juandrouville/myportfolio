@@ -18,16 +18,16 @@
     align-items: center;
     background-color: #161410;
     width: 60%;
-    height: 75%;
     box-shadow:  0 0 2px #161410;
     transform: translateY(-100vh);
-}   @media(max-width:800px){
+    }   
+    
+    @media(max-width:800px){
     .containerModal{
         width:90%;
-        height: 75%;
+        }
     }
-}
-
+    
 .toClose{
     display:flex;
     align-items: center;
@@ -55,6 +55,7 @@
     flex-direction: column;
     width: 100%;
     height: 100%;
+    padding-bottom: 1.5em;
     align-items: center;
     overflow: hidden;
 }
