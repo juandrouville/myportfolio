@@ -19,7 +19,7 @@ function Contact() {
 
     return (
         <div className="conteinerContact">
-            <h1>{title[language]}</h1>
+            <h1 className="titleContact">{title[language]}</h1>
             <div className="lineBottom"></div>
             <div className="conteinerIcons">
                 <div className="links">
