@@ -5,6 +5,7 @@ const objDog = {
         por:"Desenvolvi um site que consome dados de uma API externa e complementa com registros personalizados.\n Utilizei React.js com Redux para gerenciamento de estado, paginação dinâmica e filtros avançados. CSS puro com design responsivo. Backend em NodeJs e Express com Postgre para armazenamento. A solução oferece CRUD completo, permitindo desde consultas até a criação e edição registros.",
     },
     title: 'MY DOG APP', 
+    subTitle:'WEB APP',
     goSite:'https://mydog-app.web.app/',
     tools:["Html","JavaScript","NodeJS","Css","ReactJS","Redux","Postgress","Sequelize"],
 };
@@ -15,6 +16,7 @@ const objWine = {
     },
     goSite:"https://pf-vinos-ecommerce.vercel.app/",
     title: 'WINE APP',
+    subTitle:'WEB APP',
     tools:["Html","JavaScript","NodeJS","Css","ReactJS","Redux","Postgress","Sequelize"],
 };
 const objSaturno = {
@@ -24,6 +26,7 @@ const objSaturno = {
     },
     goSite:"https://gitlab.com/dev-salud/turnosapp",
     title:"SATURNO APP",
+    subTitle:'MOBILE APP',
     tools:["JavaScript","NodeJS","React Native","Expo","Css"],
 };
 
@@ -34,6 +37,7 @@ const objMyPortfolio = {
     },
     goSite: "https://juan-drouville.web.app/",
     title:'MY PORTFOLIO',
+    subTitle:'WEB APP',
     tools:["JavaScript","NodeJS","ReactJS","Css"],
 };
 

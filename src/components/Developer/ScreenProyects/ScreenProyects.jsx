@@ -19,7 +19,7 @@ function ScreenProyects(){
                     return(
                         <div key={index} className="cardProyect" onClick={()=>handleProyectClick(obj)}>
                             <h1 className="titleCardProyect">{obj.title}</h1>
-                            <h1 className="subTitleCardProyect"> WEB APP </h1>
+                            <h1 className="subTitleCardProyect">{obj.subTitle}</h1>
                         </div> 
                     )
                 })}
