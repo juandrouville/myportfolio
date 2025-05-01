@@ -15,7 +15,7 @@
 }
 .lineBottom{
     width:90%;
-    height: 3px;
+    height: clamp(1.5px,0.2em,3px);
     background-color: #e1dfba;
     align-self: center;
     margin-bottom: 1em;
@@ -43,7 +43,6 @@
     width: 80%;
     padding-top: 1em;
     padding-bottom: 1em;
-    background-color: yellowgreen;
 }
 
 .links{
@@ -52,9 +51,7 @@
     align-items: center;
     justify-content:flex-end;
     width:clamp( 4em, 12vw, 6em);
-    height: 100%;
     transition: all 0.5s ease-in-out;
-    background-color: tomato;
 } 
 .links img{
     width: clamp( 2.5em, 5vw, 4em);
