@@ -14,7 +14,6 @@
     width: clamp(2em,4vw,3em);
     height: clamp(1em,6.5vh,4.5em);
     cursor: pointer;
-    background-color: yellowgreen;
 }
 .iconText img{
     height: clamp(0.3em,3.5vh,2.5em);
