@@ -29,9 +29,24 @@
 }
 
 @media( max-width:700px ){
-.proyectsList{
-    grid-template-columns: 1fr;
-}
+    .proyectsList{
+        width: 80%;
+        grid-template-columns: 1fr;
+    }
+    .cardProyect{
+        display:grid;
+        grid-template-rows: 1fr 1fr;
+        min-height: 14vh;        
+    }
+    .subTitleCardProyect{
+        position: absolute;
+        bottom: 0.2em;
+        right: 0.2em;
+    }
+    .titleScreenProyects{
+        border-bottom:solid 2px #e1dfba;
+    }
+    
 }
 
 .cardProyect{
