@@ -35,13 +35,9 @@
     }
     .cardProyect{
         display:grid;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows:repeat( auto-fill, minmax(50%,1fr));
+        align-items: center;
         min-height: 14vh;        
-    }
-    .subTitleCardProyect{
-        position: absolute;
-        bottom: 0.2em;
-        right: 0.2em;
     }
     .titleScreenProyects{
         border-bottom:solid 2px #e1dfba;

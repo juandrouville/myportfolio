@@ -1,8 +1,8 @@
  
 const objDog = {
     description:{
-        esp:"Crie una web que consume datos de una API externa y los complementa con registros personalizados.\n  Usé React.js con Redux para gestión de estado, paginación dinámica y filtros avanzados. Css puro con diseño responsive. Backend en NodeJs y Express con PostgreSQL para almacenamiento. La solución ofrece CRUD completo, permitiendo desde consultas, creación e edición de nuevos registros",
-        por:"Desenvolvi um site que consome dados de uma API externa e complementa com registros personalizados.\n Utilizei React.js com Redux para gerenciamento de estado, paginação dinâmica e filtros avançados. CSS puro com design responsivo. Backend em NodeJs e Express com Postgre para armazenamento. A solução oferece CRUD completo, permitindo desde consultas até a criação e edição registros.",
+        esp:"Crie una web que consume datos de una API externa y los complementa con registros personalizados.\n  Usé React.js con Redux para gestión de estado, paginación dinámica y filtros avanzados. Css puro con diseño responsive. Backend en NodeJs y Express con Postgre. La solución ofrece CRUD completo, permitiendo consultas, creación e edición de registros",
+        por:"Desenvolvi um site que consome dados de uma API externa e complementa com registros personalizados.\n Utilizei React.js com Redux para gerenciamento de estado, paginação dinâmica e filtros avançados. CSS puro com design responsivo. Backend em NodeJs e Express com Postgre. A solução oferece CRUD completo, permitindo consultas, criação e edição registros.",
     },
     title: 'MY DOG APP', 
     subTitle:'WEB APP',
