@@ -11,8 +11,8 @@ const objDog = {
 };
 const objWine = {
     description: {
-     esp:"Aplicación Web, proyecto grupal para el curso fullstack de Soy Henry, utilice:",
-     por:"Aplicativo Web, projeto de grupo para curso fullstack de Soy Henry, utilizei",
+     esp:"Desarrollé un e-commerce de vinos con catálogo dinámico, carrito de compras y panel administrativo. Usé React con Redux para el manejo del estado global, filtros avanzados, búsqueda instantánea y persistencia del carrito. La interfaz responsiva se implementó con CSS Modules y Bootstrap.Para el backend utilicé Node.js y Express, conectado a una base de datos Postgre para almacenar productos, usuarios, pedidos y reseñas. Implementé rutas protegidas para administradores con CRUD completo e integración con Mercado Pago para los pagos.",
+     por:"Desenvolvi um e-commerce de vinhos, com catálogo dinâmico, carrinho de compras e dashboard administrativo. Utilizei React.js com Redux para gerenciamento de estado global, filtros avançados, busca instantânea e persistência do carrinho. A interface responsiva com CSS Modules e Bootstrap. No backend Node.js e Express, conectada a um banco de dados Postgre para armazenar produtos, usuários, pedidos e avaliações. Implementei rotas protegidas para administradores com CRUD completo e integração com Mercado Pago para pagamentos.",
     },
     goSite:"https://pf-vinos-ecommerce.vercel.app/",
     title: 'WINE APP',
@@ -21,8 +21,8 @@ const objWine = {
 };
 const objSaturno = {
     description : {
-        esp:"Aplicación mobile para sistema de salud argentino,\n donde actue como front-end,donde actue como front-end,donde actue como front-end,donde actue como front-end,donde actue como front-end,donde actue como front-end,donde actue como front-end,donde actue como front-end,donde actue como front-end,donde actue como front-end,donde actue como front-end,donde actue como front-end,donde actue como front-end,donde actue como front-end,",
-        por:"Aplicativo mobile para o sitema de saúde argentino, \n onde atuei como front-end,donde actue como front-end,donde actue como front-end,donde actue como front-end,donde actue como front-end,donde actue como front-end,donde actue como front-end,donde actue como front-end,donde actue como front-end,donde actue como front-end,donde actue como front-end,donde actue como front-end,donde actue como front-end,donde actue como front-end,",
+        esp:"Saturno Mobile App aplicación de gestión de turnos médicos. Actué como desarrollador frontend utilizando React Native y Expo. Diseñé toda la identidad visual de la aplicación creando componentes reutilizables. Trabajé en la integración con APIs para mostrar y actualizar los agendamientos médicos en tiempo real.",
+        por:"Saturno Mobile App aplicação de gestão de turnos médicos. Atuei como desenvolvedor frontend utilizando React Native e Expo. Desenhei toda a identidade visual da aplicação criando componentes reutilizáveis.Trabalhei na integração com APIs para exibir e atualizar os agendamentos médicos em tempo real.",
     },
     goSite:"https://gitlab.com/dev-salud/turnosapp",
     title:"SATURNO APP",
@@ -32,8 +32,8 @@ const objSaturno = {
 
 const objMyPortfolio = {
     description:{
-        esp:"Mi propio sitio web, desarrollado y diseñado por mi,donde utilize todas las herramientas que tengo para mostrar mi trabajo y ademas, mostrar de lo que seria capaz de entregar.",
-        por:"Meu proprio site web, desenvolvido e desenhado por mim, onde utilizei todas as ferramentas que conheço e apresentei o que eu posso oferecer." 
+        esp:"Desarrollé mi sitio web personal como vitrina de mis habilidades, utilizando React como base, GSAP para animaciones avanzadas y personalizadas, y CSS puro para un diseño responsivo. Implementé React Context para gestionar estados globales como el cambio de idiomas. Presenté todas las herramientas que conozco y puedo ofrecer.",
+        por:"Desenvolvi meu site pessoal como vitrine das minhas habilidades, utilizando React como base, GSAP para animações avançadas e personalizadas e CSS puro para um design responsivo. Implementei React Context para gerenciar estados globais como a troca de idiomas.Apresentei todas as ferramentas que conheço e posso oferecer." 
     },
     goSite: "https://juan-drouville.web.app/",
     title:'MY PORTFOLIO',

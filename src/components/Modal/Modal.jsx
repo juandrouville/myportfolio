@@ -27,7 +27,7 @@ const Modal = (props) => {
 
     if(!open){ return null };
         return ReactDOM.createPortal(
-            <div className="containerOverlay"  ref={overlayRef} onClick={()=> dismount()}>
+            <div className="containerOverlay"  ref={overlayRef}>
                 <div className="containerModal" ref={modalRef} >
                     <div className="borderModal">
                         <div className="toClose" onClick={()=> dismount() }><h1>X</h1></div>

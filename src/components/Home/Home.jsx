@@ -9,7 +9,6 @@ function Home(){
         <div className="containerHome">
             <Reveal/>
             <Information/>
-            <Lenguajes/>
         </div>
     );
 };

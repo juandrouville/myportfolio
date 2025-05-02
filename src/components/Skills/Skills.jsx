@@ -1,5 +1,6 @@
 import React, {useState,useEffect} from "react";
 import './Skills.css';
+import { Link } from "react-router-dom";
 import Modal from '../Modal/Modal';
 import DownloadCv from "../DownloadCv/DownloadCv";
 import { gsap } from "gsap";
@@ -12,11 +13,11 @@ function Skills(){
     })
     return(
         <div className="conteinerSkills">
-            <div style={{textAlign:"left"}} onClick={()=>setOpenModal(true)}>
+            <Link to={'/developer'} style={{textAlign:"left",textDecoration:'none'}}>
                 <div className="left skill"> DEVEL0PER</div>
                 <div className="left skill"> DESENV0LVED0R</div>
                 <div className="left skill"> PR0GRAMAD0R</div>
-            </div>
+            </Link>
             <div  style={{textAlign:"right"}}  onClick={()=>setOpenModal(true)}>
                 <div className="right skill">GRAPHIC DESIGNER </div>
                 <div className="right skill">DESING GRÁFIC0 </div>
