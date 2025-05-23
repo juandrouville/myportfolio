@@ -1,11 +1,18 @@
-import React, {useState} from "react";
+import React, {useState,useContext} from "react";
 import './ScreenProyects.css';
+import { Language } from "../../../context/languageContext";
 import CardProyect from "../CardProyect/CardProyect";
 import Modal from "../../Modal/Modal";
 import { proyects } from './proyects';
 
 function ScreenProyects(){
-    console.log('objDog',proyects);
+
+    const { language } = useContext(Language);
+    const title = {
+        esp:'PROJECTOS',
+        por:'PROJETOS',
+    }
+    
     const [selectedProyect, setSelectedProyect] = useState(null);
 
     const handleProyectClick = (proyect) => { setSelectedProyect(proyect) };
@@ -13,7 +20,7 @@ function ScreenProyects(){
 
     return (
         <div className="conteinerProyects">
-            <h1 className="titleScreenProyects">PROJETOS</h1>
+            <h1 className="titleScreenProyects">{title[language]}</h1>
             <div className="proyectsList">
                 {proyects.map(( obj, index )=>{
                     return(

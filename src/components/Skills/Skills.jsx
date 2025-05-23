@@ -8,21 +8,18 @@ import { gsap } from "gsap";
 function Skills(){
     const [openModal , setOpenModal]= useState(false);
     useEffect(()=>{
-        gsap.to(".left",{delay:4,opacity:1, y:-1,stagger:0.2});
-        gsap.to(".right",{delay:4,opacity:1, y:-1,stagger:0.2});
+        gsap.to(".skill",{delay:4,opacity:1, y:-1,stagger:0.2});
     })
     return(
         <div className="conteinerSkills">
-            <Link to={'/developer'} style={{textAlign:"left",textDecoration:'none'}}>
-                <div className="left skill"> DEVEL0PER</div>
-                <div className="left skill"> DESENV0LVED0R</div>
-                <div className="left skill"> PR0GRAMAD0R</div>
+            <Link to={'/developer'} className="subLineMenu">
+                <div className="skill">DEVEL0PER</div>
+                <div className="skill learnMore">[ + ]</div>
             </Link>
-            <div  style={{textAlign:"right"}}  onClick={()=>setOpenModal(true)}>
-                <div className="right skill">GRAPHIC DESIGNER </div>
-                <div className="right skill">DESING GRÁFIC0 </div>
-                <div className="right skill">DISEÑAD0R GRÁFIC0 </div>
-            </div>
+            <a  className="subLineMenu" href="https://www.behance.net/jadrouvillaa0e/" target={"_blank"} rel="noreferrer" style={{textAlign:'right'}}>
+                <div className="skill" >GRAPHIC DESIGNER</div>
+                <div className="skill learnMore">[ + ]</div>
+            </a>
             <Modal open={openModal} onClickClose={()=>setOpenModal(false)}>
                 <DownloadCv/>
             </Modal>

@@ -1,13 +1,3 @@
-@keyframes change-shadow{
-    50%{
-        box-shadow: 0 0 4px #e1dfba;
-        text-shadow: 0 0 4px #e1dfba; 
-    }
-    100%{
-        box-shadow: 0 0 2px #e1dfba; 
-        text-shadow: 0 0 2px #e1dfba;
-    }
-}
  
 .conteinerNav{
     display: flex;
@@ -18,38 +8,29 @@
     min-width: 280px;
     height: 8vh;
     margin-bottom: 4vh;
+    filter: drop-shadow( 0 0 1px #e1dfba );
+    font-size:clamp( 0.7em, 0.8vw, 0.8em);
+    font-family:'secondFont';
+    color: #e1dfba;
 }
       
 .squarePortfolio{
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
-    background-color: #161410;
-    padding: 0.5rem;
-    font-family:'secondFont';
-    color: #e1dfba;
-    font-size:clamp( 0.7em, 0.7vw, 0.8em);
-    border:solid 2px #e1dfba;
-    box-shadow: 0 0 2px #e1dfba;
-    text-shadow: 0 0 2px #e1dfba;
     transform: translateX(-100px);
-    animation:change-shadow infinite ease-in-out 3s;
+    border-bottom:solid 2px #e1dfba;
+    padding: 0.5rem;
+    color: #e1dfba;
+    cursor: pointer;
 }
 
 .squareContac{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0.5rem;
-    background-color: #161410;
-    font-family: 'secondFont';
-    color: #e1dfba;
-    font-size:clamp( 0.7em, 0.7vw, 0.8em);
-    border:solid 2px #e1dfba;
-    box-shadow: 0 0 2px #e1dfba;
-    text-shadow: 0 0 2px #e1dfba;
-    cursor: pointer;
     transform: translateX(100px);
-    animation:change-shadow infinite ease-in-out 3s;
+    padding: 0.5rem;
+    border-bottom:solid 2px #e1dfba;
+    cursor: pointer;
 }

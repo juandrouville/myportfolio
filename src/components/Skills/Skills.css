@@ -3,7 +3,7 @@
     display: flex;
     justify-self: center;
     justify-content: space-between;
-    margin-top: 1vh;
+    margin-top: 1.5vh;
     width: 90vw;
 }
 
@@ -12,7 +12,7 @@
     font-family: 'secondFont';
     letter-spacing: 0.03em;
     font-weight: 600;
-    font-size:clamp( 0.6em, 1vw, 0.9em);
+    font-size:clamp( 0.8em, 1.3vw, 1.1em);
     color: #e1dfba;
     filter: drop-shadow( 0 0 1px #e1dfba );
     cursor: pointer;
@@ -21,8 +21,18 @@
     transform: translateY(2vh);
 }
 
-.skill:hover{
-    transition:0.5s ease-in-out;
-    letter-spacing: 0.2em;
+.subLineMenu{
+    text-align:"left";
+    text-decoration: none;
+    
 }
 
+.subLineMenu:hover .skill{
+    letter-spacing: 0.2em;
+    
+}
+
+.subLineMenu:hover .learnMore{
+    color: #d1331e;
+    filter: drop-shadow( 0 0 2px #d1331e );
+}
