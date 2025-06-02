@@ -13,12 +13,12 @@ function Skills(){
     return(
         <div className="conteinerSkills">
             <Link to={'/developer'} className="subLineMenu">
+                <div className="skill learnMore">[ + ] </div>
                 <div className="skill">DEVEL0PER</div>
-                <div className="skill learnMore">[ + ]</div>
             </Link>
             <a  className="subLineMenu" href="https://www.behance.net/jadrouvillaa0e/" target={"_blank"} rel="noreferrer" style={{textAlign:'right'}}>
-                <div className="skill" >GRAPHIC DESIGNER</div>
                 <div className="skill learnMore">[ + ]</div>
+                <div className="skill" >GRAPHIC DESIGNER</div>
             </a>
             <Modal open={openModal} onClickClose={()=>setOpenModal(false)}>
                 <DownloadCv/>

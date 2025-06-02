@@ -22,15 +22,14 @@
 }
 
 .subLineMenu{
-    text-align:"left";
     text-decoration: none;
-    
 }
+    
 
 .subLineMenu:hover .skill{
     letter-spacing: 0.2em;
-    
 }
+    
 
 .subLineMenu:hover .learnMore{
     color: #d1331e;

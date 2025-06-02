@@ -13,24 +13,24 @@
     font-family:'secondFont';
     color: #e1dfba;
 }
-      
-.squarePortfolio{
+
+.square{
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translateX(-100px);
-    border-bottom:solid 2px #e1dfba;
+    border:solid 2px #e1dfba;
     padding: 0.5rem;
     color: #e1dfba;
     cursor: pointer;
+    transition: all ease-in-out 0.5s;
+}
+      
+.squarePortfolio{
+    transform: translateX(-100px);
+    
 }
 
 .squareContac{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     transform: translateX(100px);
-    padding: 0.5rem;
-    border-bottom:solid 2px #e1dfba;
-    cursor: pointer;
 }
+

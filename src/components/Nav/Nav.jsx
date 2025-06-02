@@ -23,11 +23,11 @@ function Nav() {
     return (
         <div className="conteinerNav">
             <Link to={'/'} style={{ textDecoration: 'none' }}>
-                <div className="squarePortfolio">
+                <div className="squarePortfolio square">
                     JUAN DR0UVILLE 
                 </div>
             </Link>
-            <div className="squareContac" onClick={() => setOpenModal(true)}>{title[language]}</div>
+            <div className="squareContac square" onClick={() => setOpenModal(true)}>{title[language]}</div>
                 <Modal open={openModal} onClickClose={() => setOpenModal(false)}>
                     <Contact />
                 </Modal>
