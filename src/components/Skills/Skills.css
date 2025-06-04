@@ -9,29 +9,28 @@
 
 .skill{
     margin-top: 0.3vh;
+    margin-bottom: 0.3vh;
     font-family: 'secondFont';
-    letter-spacing: 0.03em;
+    letter-spacing: 0.06em;
     font-weight: 600;
     font-size:clamp( 0.8em, 1.3vw, 1.1em);
     color: #e1dfba;
     filter: drop-shadow( 0 0 1px #e1dfba );
     cursor: pointer;
-    transition:0.5s ease-in-out;
+    transition: all 1s ease-in-out;
     opacity: 0;
     transform: translateY(2vh);
 }
 
 .subLineMenu{
     text-decoration: none;
+    transition: all ease-in-out 1s;
 }
     
-
 .subLineMenu:hover .skill{
     letter-spacing: 0.2em;
-}
-    
-
-.subLineMenu:hover .learnMore{
     color: #d1331e;
     filter: drop-shadow( 0 0 2px #d1331e );
 }
+
+    
