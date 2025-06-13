@@ -2,9 +2,13 @@ import React, { useContext, useEffect } from "react";
 import "./Lenguajes.css";
 import { Language } from '../../context/languageContext';
 import { gsap } from 'gsap';
+import { useLocation } from "react-router-dom";
 
 function Lenguajes(){
     const { setLanguage , language } = useContext(Language);
+    const location = useLocation();
+
+    let delay = location.pathname === '/' && location.key === 'default' ? 3.5 : 0;
 
     const changeLanguage= (event) => {
         var language = event.target.id;
@@ -12,7 +16,7 @@ function Lenguajes(){
     };
 
     useEffect(()=>{
-        gsap.to(".containerLenguajes",{opacity:1, y:'-2vh', delay:3.5, ease:'Power1.easeIn'});
+        gsap.to(".containerLenguajes",{opacity:1, y:'-2vh', delay:delay, ease:'Power1.easeIn'});
     })
     return(
         <div className="containerLenguajes">

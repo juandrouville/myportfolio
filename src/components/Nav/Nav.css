@@ -4,8 +4,7 @@
     justify-content:space-between;
     align-self: center;
     align-items:flex-end;
-    width: 110vw;
-    min-width: 280px;
+    width: 90vw;
     height: 8vh;
     margin-bottom: 4vh;
     filter: drop-shadow( 0 0 1px #e1dfba );
@@ -26,11 +25,11 @@
 }
       
 .squarePortfolio{
-    transform: translateX(-100px);
+    transform: translateX(-200%);
     
 }
 
 .squareContac{
-    transform: translateX(100px);
+    transform: translateX(200%);
 }
 

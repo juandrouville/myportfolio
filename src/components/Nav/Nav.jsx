@@ -5,18 +5,22 @@ import Modal from '../Modal/Modal';
 import Contact from '../Contact/Contact';
 import { Link } from "react-router-dom";
 import { gsap } from "gsap";
+import { useLocation } from "react-router-dom";
 
 function Nav() {
     const [openModal, setOpenModal] = React.useState(false);
     const { language } = useContext(Language);
+    const location = useLocation();
+    
+    let delay = location.pathname === '/' && location.key === 'default' ? 3.5 : 0;
+
     const title = {
         esp: 'C0NTACT0',
         por: 'C0NTAT0',
     };
 
     useEffect(()=> {
-        gsap.to(['.squarePortfolio','.squareContac'],{x:0,duration:0.8,ease:"power1.inOut",delay:3.5});
-        gsap.to(".conteinerNav",{width:'90vw',ease:"power1.inOut",delay:3.5});
+        gsap.to(['.squarePortfolio','.squareContac'],{x:0,duration:0.8,ease:"power1.inOut",delay:delay});
     },[]);
 
     

@@ -1,13 +1,15 @@
 import React from "react";
+import { useLocation } from 'react-router-dom';
 import './Home.css';
 import Information from "../Information/information";
-import Lenguajes from "../Lenguajes/Lenguajes";
 import Reveal from "../Reveal/Reveal";
 
 function Home(){
+    const location = useLocation();
+
     return (
         <div className="containerHome">
-            <Reveal/>
+            { location.key === "default" && <Reveal/> }
             <Information/>
         </div>
     );

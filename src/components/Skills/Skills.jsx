@@ -4,11 +4,15 @@ import { Link } from "react-router-dom";
 import Modal from '../Modal/Modal';
 import DownloadCv from "../DownloadCv/DownloadCv";
 import { gsap } from "gsap";
+import { useLocation } from "react-router-dom";
 
 function Skills(){
     const [openModal , setOpenModal]= useState(false);
+    const location = useLocation();
+
+    let delay = location.key === 'default' ? 4 : 0.8;
     useEffect(()=>{
-        gsap.to(".skill",{delay:4,opacity:1, y:-1,stagger:0.2});
+        gsap.to(".skill",{delay:delay,opacity:1, y:-1,stagger:0.2});
     })
     return(
         <div className="conteinerSkills">
