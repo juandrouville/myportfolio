@@ -12,15 +12,18 @@ function Skills(){
 
     let delay = location.key === 'default' ? 4 : 0.8;
     useEffect(()=>{
-        gsap.to(".skill",{delay:delay,opacity:1, y:-1,stagger:0.2});
-    })
+        let tl = gsap.timeline();
+        tl.to(".skill",{delay:delay,opacity:1, y:-1});
+    });
     return(
         <div className="conteinerSkills">
             <Link to={'/developer'} className="subLineMenu">
-                <div className="skill">{"[ DEVEL0PER ] <--"}</div>
+                <div className="skill">{"[ DEVEL0PER ]"}</div>
+                <div className="skill arrow">{"\u00A0<--"}</div>
             </Link>
             <a  className="subLineMenu" href="https://www.behance.net/jadrouvillaa0e/" target={"_blank"} rel="noreferrer" style={{textAlign:'right'}}>
-                <div className="skill"> {"--> [ DESIGNER ] "}</div>
+                <div className="skill arrow">{"-->\u00A0"}</div>
+                <div className="skill"> {"[ DESIGNER ] "}</div>
             </a>
             <Modal open={openModal} onClickClose={()=>setOpenModal(false)}>
                 <DownloadCv/>

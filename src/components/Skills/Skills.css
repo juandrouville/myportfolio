@@ -1,4 +1,9 @@
-
+@keyframes transformSkill {
+    0% { color: #e1dfba; filter: drop-shadow( 0 0 1px #e1dfba );letter-spacing: 0.06em;}
+    50% {letter-spacing: 0.2em;color: #d1331e; filter: drop-shadow( 0 0 2px #d1331e );}
+    100% { color: #e1dfba; filter: drop-shadow( 0 0 1px #e1dfba );letter-spacing: 0.06em;}
+}
+   
 .conteinerSkills{
     display: flex;
     justify-self: center;
@@ -8,12 +13,12 @@
 }
 
 .skill{
-    margin-top: 0.3vh;
+    margin-top: 0.4vh;
     margin-bottom: 0.3vh;
     font-family: 'secondFont';
     letter-spacing: 0.06em;
     font-weight: 600;
-    font-size:clamp( 0.8em, 1.3vw, 1.1em);
+    font-size:clamp( 0.9em, 1.4vw, 1.3em);
     color: #e1dfba;
     filter: drop-shadow( 0 0 1px #e1dfba );
     cursor: pointer;
@@ -21,8 +26,17 @@
     opacity: 0;
     transform: translateY(2vh);
 }
+ 
+.arrow{
+    animation: transformSkill 3s ease-in-out 4;
+    animation-delay: 4s;
+    animation-direction: alternate;
+    
+}
 
 .subLineMenu{
+    display: flex;
+    flex-direction: row;
     text-decoration: none;
     transition: all ease-in-out 1s;
 }
@@ -31,6 +45,6 @@
     letter-spacing: 0.2em;
     color: #d1331e;
     filter: drop-shadow( 0 0 2px #d1331e );
-}
+} 
 
-    
+ 
