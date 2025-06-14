@@ -60,12 +60,14 @@
     position: absolute;
     text-align: justify;
     text-justify: inter-word;
-    hyphens: auto;
+    hyphens: manual;
+    word-break: keep-all;
+    overflow-wrap: normal;
     align-self: flex-end;
     bottom: clamp(0,4vh ,8em);
     width: 20%;
     right:30%;
-    font-size: clamp( 0.8em, 0.9vw, 1em);
+    font-size: clamp( 0.9em, 1vw, 1em);
     clip-path: inset(0 0 100% 0);
     transition: clip-path 1s ease-in-out;
     opacity: 0;
@@ -91,7 +93,7 @@
 
     .containerPresentation{
         position: absolute;
-        justify-content:start;
+        justify-content:center;
         bottom: 8vh;
         height:45vh;
     }
