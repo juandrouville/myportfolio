@@ -1,4 +1,4 @@
 export const myPresentationText ={
-    esp: '¡Hola, soy Juan! Me gusta crear, resolver problemas y encontrar nuevas soluciones. Me dedico en serio a lo que hago y veo cada desafío como una oportunidad para aprender y crecer. Me gusta asumir responsabilidades y estoy convencido de que la creatividad y el compromiso hacen la diferencia. Siempre estoy buscando nuevas oportunidades para evolucionar y aportar con mi trabajo.',
-    por: 'Oi sou Juan! Gosto de criar, resolver problemas e encontrar novas soluções. Me dedico de verdade ao que faço e encaro cada desafio como uma chance de aprender e crescer. Gosto de assumir responsabilidades e acredito que criatividade e comprometimento fazem toda a diferença. Estou sempre em busca de novas oportunidades para evoluir e contribuir com meu trabalho.',
+    esp: 'Soy Juan. Diseñador y programador enfocado en crear y resolver. Creo que el compromiso y la creatividad marcan la diferencia, por eso entrego mi máximo en cada proyecto.',
+    por: 'Oi, sou Juan. Designer e desenvolvedor focado em criar e resolver.Acredito que compromisso e criatividade fazem toda a diferença, por isso me dedico ao máximo em cada desafio.',
 }

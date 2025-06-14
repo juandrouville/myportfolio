@@ -90,7 +90,7 @@
     .cardProyect{
         display:grid;
         grid-template-rows:1fr 0.6fr;
-        min-height: 14vh;        
+        height: 12vh;        
     }
     .titleCardProyect{
         display: flex;
