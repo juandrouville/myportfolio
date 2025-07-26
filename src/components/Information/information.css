@@ -58,7 +58,6 @@
 .textPresentation{
     display: flex;
     position: absolute;
-    text-align: justify;
     text-justify: inter-word;
     hyphens: manual;
     word-break: keep-all;
@@ -67,7 +66,7 @@
     bottom: clamp(0,4vh ,8em);
     width: 20%;
     right:30%;
-    font-size: clamp( 0.9em, 1vw, 1em);
+    font-size: clamp( 1em, 1.1vw, 1.2em);
     clip-path: inset(0 0 100% 0);
     transition: clip-path 1s ease-in-out;
     opacity: 0;
@@ -100,7 +99,11 @@
     
     .textPresentation{
         position: relative;
-        width: 70%;
+        text-align:justify;
+        word-spacing: 0;
+        text-justify: inter-character;
+        letter-spacing: 0.2px;
+        width: 60%;
         right:0;
         margin-top: 0;
         margin-bottom:clamp(2em,4vh,3em);
